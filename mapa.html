@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>El mapa de la fusión — Cáscara V4</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310069F'/%3E%3Ccircle cx='32' cy='44' r='9' fill='%23F4F2EE'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Redaction';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/redaction-italic.otf) format('opentype')}
+html,body{margin:0;background:#E9E7E2;overscroll-behavior:none}
+body{-webkit-font-smoothing:antialiased;touch-action:none}
+a{color:#10069F;text-decoration:none}
+a:hover{opacity:.7}
+a.volver:hover{opacity:.86}
+::selection{background:#10069F;color:#fff}
+</style>
+</head>
+<body>
+<a class="volver" href="index.html" style="position:fixed;left:20px;top:20px;z-index:120;display:flex;align-items:center;gap:10px;background:#10069F;color:#fff;border-radius:999px;padding:11px 22px 11px 18px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;box-shadow:0 6px 20px rgba(10,10,12,.18)"><span style="font-size:15px;line-height:1">←</span><span>Volver</span></a>
+
+<div data-board="mapa" style="position:relative;width:6400px;height:5500px;background:#F4F2EE;background-image:radial-gradient(rgba(10,10,12,.055) 1.4px,transparent 1.4px);background-size:26px 26px;font-family:'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;color:#0A0A0C;-webkit-font-smoothing:antialiased;overflow:hidden">
+
+  <!-- marcos -->
+  <div data-c="0" style="position:absolute;left:40px;top:620px;width:6320px;height:1341px;z-index:0;border:1.5px dashed rgba(16,6,159,.3);border-radius:24px"></div>
+  <div data-c="1" style="position:absolute;left:40px;top:2201px;width:3460px;height:1347px;z-index:0;border:1.5px dashed rgba(16,6,159,.3);border-radius:24px"></div>
+  <div data-c="2" style="position:absolute;left:3580px;top:2201px;width:2780px;height:1572px;z-index:0;border:1.5px dashed rgba(16,6,159,.3);border-radius:24px"></div>
+  <div data-c="3" style="position:absolute;left:40px;top:3788px;width:6320px;height:990px;z-index:0;border:1.5px dashed rgba(16,6,159,.3);border-radius:24px"></div>
+  <div data-c="4" style="position:absolute;left:40px;top:5018px;width:6320px;height:409px;z-index:0;border:1.5px dashed rgba(16,6,159,.3);border-radius:24px"></div>
+
+  <div style="position:absolute;left:70px;top:594px;z-index:2;background:#10069F;color:#fff;border-radius:999px;padding:8px 22px;font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase">01 · La escalera — cada marca vende una sola oferta</div>
+  <div style="position:absolute;left:70px;top:2175px;z-index:2;background:#10069F;color:#fff;border-radius:999px;padding:8px 22px;font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase">02 · La estructura — marca madre y divisiones</div>
+  <div style="position:absolute;left:3610px;top:2175px;z-index:2;background:#10069F;color:#fff;border-radius:999px;padding:8px 22px;font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase">03 · La propiedad — equity y vesting</div>
+  <div style="position:absolute;left:70px;top:3762px;z-index:2;background:#10069F;color:#fff;border-radius:999px;padding:8px 22px;font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase">04 · La economía — cómo se reparte cada peso</div>
+  <div style="position:absolute;left:70px;top:4992px;z-index:2;background:#10069F;color:#fff;border-radius:999px;padding:8px 22px;font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase">05 · Capital y principios</div>
+
+    <svg style="position:absolute;inset:0;z-index:0;pointer-events:none" width="6400" height="5500" viewBox="0 0 6400 5500">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#10069F"></path></marker>
+        <marker id="arrBig" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#10069F"></path></marker>
+      </defs>
+      <g fill="none" stroke="#10069F" stroke-width="4.5" stroke-linecap="round">
+        <path d="M2732,830 H2900" marker-end="url(#arr)"></path>
+        <path d="M4532,830 H4700" marker-end="url(#arr)"></path>
+        <path d="M300,858 V946" marker-end="url(#arr)"></path>
+        <path d="M300,1598 V1666" marker-end="url(#arr)"></path>
+        <path d="M1920,1043 V1300 M3720,1178 V1300 M5520,1118 V1300 M1920,1300 H5520"></path>
+        <path d="M3180,1300 V1452" marker-end="url(#arr)"></path>
+        <path d="M1152,2381 H1220" marker-end="url(#arr)"></path>
+        <path d="M2312,2372 H2380" marker-end="url(#arr)"></path>
+        <path d="M1770,2501 V2551 M610,2551 H2930"></path>
+        <path d="M610,2551 V2587 M1770,2551 V2587 M2930,2551 V2587" marker-end="url(#arr)"></path>
+        <path d="M4970,2764 V2820 M4030,2820 H5910"></path>
+        <path d="M4030,2820 V2902 M4970,2820 V2902 M5910,2820 V2902" marker-end="url(#arr)"></path>
+        <path d="M2060,4301 V4369" marker-end="url(#arr)"></path>
+      </g>
+      <g fill="none" stroke="#10069F" stroke-width="11" stroke-linecap="round">
+        <path d="M1000,1961 V2177" marker-end="url(#arrBig)"></path>
+        <path d="M4970,1961 V2177" marker-end="url(#arrBig)"></path>
+        <path d="M3200,3548 V3764" marker-end="url(#arrBig)"></path>
+        <path d="M4970,3513 V3764" marker-end="url(#arrBig)"></path>
+        <path d="M3200,4778 V4994" marker-end="url(#arrBig)"></path>
+      </g>
+    </svg>
+  <div style="position:absolute;left:2720px;top:866px;width:200px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:8px 10px;box-sizing:border-box;text-align:center">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;line-height:1.15;color:#10069F">asciende</div>
+    <div style="font-weight:700;font-size:13px;line-height:1.35;color:#0A0A0C;margin-top:4px">el que ya vende pasa al nivel 2</div>
+  </div>
+  <div style="position:absolute;left:4520px;top:866px;width:200px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:8px 10px;box-sizing:border-box;text-align:center">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;line-height:1.15;color:#10069F">se otorga</div>
+    <div style="font-weight:700;font-size:13px;line-height:1.35;color:#0A0A0C;margin-top:4px">de los casos que funcionan sale el nivel 3</div>
+  </div>
+  <div style="position:absolute;left:350px;top:880px;width:max-content;max-width:700px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#10069F">así se ejecuta</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#0A0A0C;margin-top:7px">el principio se vuelve un circuito concreto de tres niveles</div>
+  </div>
+  <div style="position:absolute;left:350px;top:1632px;transform:translateY(-50%);width:max-content;max-width:700px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#10069F">y el efecto</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#0A0A0C;margin-top:7px">el nivel de abajo empuja al de arriba sin vender nada</div>
+  </div>
+  <div style="position:absolute;left:3260px;top:1376px;transform:translateY(-50%);width:max-content;max-width:900px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#10069F">cada nivel, su registro</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#0A0A0C;margin-top:7px">un solo evento de conversión por marca, sin cruces</div>
+  </div>
+  <div style="position:absolute;left:1050px;top:2069px;transform:translateY(-50%);width:max-content;max-width:1160px;z-index:3;background:#10069F;border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#AEB6FF">para que esto funcione</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#FFFFFF;margin-top:7px">hay que definir de quién es la marca y quién opera cada división</div>
+  </div>
+  <div style="position:absolute;left:5020px;top:2069px;transform:translateY(-50%);width:max-content;max-width:1160px;z-index:3;background:#10069F;border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#AEB6FF">y del otro lado</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#FFFFFF;margin-top:7px">quién es dueño de la sociedad que licencia esa marca</div>
+  </div>
+  <div style="position:absolute;left:1142px;top:2415px;width:96px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:8px 10px;box-sizing:border-box;text-align:center">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;line-height:1.15;color:#10069F">es de</div>
+    <div style="font-weight:700;font-size:13px;line-height:1.35;color:#0A0A0C;margin-top:4px">la sociedad</div>
+  </div>
+  <div style="position:absolute;left:2302px;top:2404px;width:96px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:8px 10px;box-sizing:border-box;text-align:center">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;line-height:1.15;color:#10069F">otorga</div>
+    <div style="font-weight:700;font-size:13px;line-height:1.35;color:#0A0A0C;margin-top:4px">licencia</div>
+  </div>
+  <div style="position:absolute;left:3000px;top:2500px;width:max-content;max-width:460px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#10069F">licencia</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#0A0A0C;margin-top:7px">identidad y posicionamiento a cada división</div>
+  </div>
+  <div style="position:absolute;left:3620px;top:2770px;width:max-content;max-width:390px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#10069F">se consolida</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#0A0A0C;margin-top:7px">el equity lleva vesting y solo se amplía por cuatro caminos</div>
+  </div>
+  <div style="position:absolute;left:3260px;top:3656px;transform:translateY(-50%);width:max-content;max-width:1160px;z-index:3;background:#10069F;border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#AEB6FF">con eso definido</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#FFFFFF;margin-top:7px">cada división reparte su propia economía, con su propio método</div>
+  </div>
+  <div style="position:absolute;left:5020px;top:3638px;transform:translateY(-50%);width:max-content;max-width:1160px;z-index:3;background:#10069F;border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#AEB6FF">la propiedad no es sueldo</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#FFFFFF;margin-top:7px">define dividendos y valor de salida, no el ingreso del mes</div>
+  </div>
+  <div style="position:absolute;left:2110px;top:4335px;transform:translateY(-50%);width:max-content;max-width:720px;z-index:3;background:rgba(244,242,238,.95);border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#10069F">lo que la marca retiene</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#0A0A0C;margin-top:7px">entra a la caja central de la sociedad</div>
+  </div>
+  <div style="position:absolute;left:3260px;top:4886px;transform:translateY(-50%);width:max-content;max-width:1360px;z-index:3;background:#10069F;border-radius:10px;padding:12px 16px;box-sizing:border-box;text-align:left">
+    <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:25px;line-height:1.15;color:#AEB6FF">lo que sigue</div>
+    <div style="font-weight:500;font-size:16.5px;line-height:1.35;color:#FFFFFF;margin-top:7px">la secuencia de acuerdos y lo que todavía está abierto</div>
+  </div>
+
+  <!-- header -->
+  <div style="position:absolute;left:2080px;top:80px;width:1040px;z-index:1;background:#10069F;border-radius:16px;padding:34px 36px;overflow:hidden">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-30px;bottom:-16px;width:420px;opacity:.16;pointer-events:none">
+    <div style="position:relative">
+      <div style="display:flex;align-items:center;gap:14px"><span style="width:30px;height:3px;background:#AEB6FF;display:block"></span><span style="font-weight:500;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:#AEB6FF">Documento maestro · interno de socios</span></div>
+      <div style="font-weight:700;font-size:38px;line-height:1;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin-top:22px">el mapa maestro</div>
+      <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:86px;line-height:.95;color:#fff;margin-top:6px">cáscara V4.</div>
+      <div style="height:1px;background:rgba(255,255,255,.28);margin:24px 0 18px"></div>
+      <p style="margin:0;font-weight:300;font-size:16px;line-height:1.5;color:rgba(255,255,255,.85);text-wrap:pretty">La <b style="font-weight:700;color:#fff">escalera de valor</b> integrada con el sistema económico y de propiedad. Un solo B2C, una sola aceleradora, <b style="font-weight:700;color:#fff">una sola marca</b>.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+        <span style="border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 16px;font-size:13px;line-height:1;color:#fff;font-weight:500">Facu</span>
+        <span style="border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 16px;font-size:13px;line-height:1;color:#fff;font-weight:500">Fede</span>
+        <span style="border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 16px;font-size:13px;line-height:1;color:#fff;font-weight:500">Juana</span>
+        <span style="background:#fff;border:1.5px solid #fff;border-radius:999px;padding:7px 16px;font-size:13px;line-height:1;color:#10069F;font-weight:700">Franco · late founder</span>
+        <span style="background:#fff;border:1.5px solid #fff;border-radius:999px;padding:7px 16px;font-size:13px;line-height:1;color:#10069F;font-weight:700">Teo · late founder</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:3280px;top:80px;width:1040px;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;align-items:center;gap:14px"><span style="width:30px;height:3px;background:#10069F"></span><span style="font-weight:500;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:#10069F">Cómo leer este mapa</span></div>
+    <div style="margin-top:18px;display:flex;flex-direction:column">
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(10,10,12,.12)">
+        <span style="border:1.5px dashed rgba(16,6,159,.55);border-radius:8px;height:34px;display:block"></span>
+        <span style="font-weight:300;font-size:14px;line-height:1.4;color:#3A3A40">Cada <b style="font-weight:700">zona punteada</b> es una capa del sistema: escalera, estructura, propiedad, economía, decisiones</span>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(10,10,12,.12)">
+        <span style="display:flex;align-items:center;justify-content:center"><svg width="30" height="34" viewBox="0 0 30 34"><path d="M15,2 V24" stroke="#10069F" stroke-width="11" stroke-linecap="round" fill="none"></path><path d="M15,20 L26,20 L15,33 L4,20 Z" fill="#10069F"></path></svg></span>
+        <span style="font-weight:300;font-size:14px;line-height:1.4;color:#3A3A40">La <b style="font-weight:700">flecha gruesa</b> es un salto de capa: lo que obliga a pasar de una a la siguiente</span>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(10,10,12,.12)">
+        <span style="background:#10069F;border-radius:8px;height:34px;display:flex;align-items:center;justify-content:center"><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#AEB6FF">así se lee</span></span>
+        <span style="font-weight:300;font-size:14px;line-height:1.4;color:#3A3A40">Cada flecha lleva su <b style="font-weight:700">leyenda</b>: dice en qué sentido va y por qué</span>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;padding:12px 0;border-top:1px solid rgba(10,10,12,.12)">
+        <span style="background:#fff;border-radius:8px;height:34px;display:block;box-shadow:0 0 0 1.5px #10069F"></span>
+        <span style="font-weight:300;font-size:14px;line-height:1.4;color:#3A3A40">El <b style="font-weight:700">anillo azul</b> marca la pieza clave de cada zona</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 01 la escalera -->
+  <div data-c="6" style="position:absolute;text-align:center;left:80px;top:680px;width:1000px;height:auto;z-index:1;background:#10069F;color:#fff;border-radius:16px;padding:30px 32px">
+    <div style="font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#AEB6FF">El principio que ordena todo</div>
+    <div style="font-weight:700;font-size:30px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.1;margin-top:12px">Cada marca personal vende una sola oferta. <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#AEB6FF">Nunca dos.</span></div>
+    <p style="margin:14px 0 0;font-weight:300;font-size:14.5px;line-height:1.5;color:rgba(255,255,255,.85)">No es una regla de orden: es el motor comercial. Todo el contenido apunta a <b style="font-weight:700;color:#fff">un único evento de conversión</b> y la audiencia nunca duda de qué comprar.</p>
+  </div>
+
+  <div data-c="7" style="position:absolute;left:80px;top:966px;width:1000px;height:620px;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px">
+    <div style="position:absolute;left:28px;top:24px">
+      <div style="font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#10069F">La cascada</div>
+      <div style="font-weight:700;font-size:24px;letter-spacing:-.02em;text-transform:uppercase;margin-top:6px">El circuito <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">— no tres negocios sueltos.</span></div>
+    </div>
+    <div style="position:absolute;left:20px;top:100px;width:960px;height:500px">
+      <svg style="position:absolute;inset:0;pointer-events:none" width="960" height="500" viewBox="0 0 960 500">
+        <defs>
+          <marker id="arrc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#10069F"></path></marker>
+        </defs>
+        <path d="M480,180 V120" stroke="rgba(10,10,12,.25)" stroke-width="1.5" stroke-dasharray="3 6" fill="none"></path>
+        <path d="M560,250 H700" stroke="rgba(10,10,12,.25)" stroke-width="1.5" stroke-dasharray="3 6" fill="none"></path>
+        <path d="M480,320 V380" stroke="rgba(10,10,12,.25)" stroke-width="1.5" stroke-dasharray="3 6" fill="none"></path>
+        <path d="M400,250 H260" stroke="rgba(10,10,12,.25)" stroke-width="1.5" stroke-dasharray="3 6" fill="none"></path>
+        <path d="M600,104 Q 760,130 796,206" fill="none" stroke="#10069F" stroke-width="2" marker-end="url(#arrc)"></path>
+        <path d="M792,296 Q 754,372 600,398" fill="none" stroke="#10069F" stroke-width="2" marker-end="url(#arrc)"></path>
+        <path d="M360,398 Q 206,372 168,296" fill="none" stroke="#10069F" stroke-width="2" marker-end="url(#arrc)"></path>
+        <path d="M164,206 Q 200,130 360,104" fill="none" stroke="#10069F" stroke-width="2" marker-end="url(#arrc)"></path>
+        <text x="746" y="110" font-family="'Redaction',Georgia,serif" font-style="italic" font-size="17" fill="#10069F">asciende el que crece</text>
+        <text x="744" y="402" font-family="'Redaction',Georgia,serif" font-style="italic" font-size="17" fill="#10069F">se otorga</text>
+        <text x="86" y="396" font-family="'Redaction',Georgia,serif" font-style="italic" font-size="17" fill="#10069F">casos y prueba</text>
+        <text x="96" y="112" font-family="'Redaction',Georgia,serif" font-style="italic" font-size="17" fill="#10069F">audiencia</text>
+      </svg>
+      <div style="position:absolute;left:405px;top:175px;width:150px;height:150px;border-radius:50%;background:#10069F;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center">
+        <span style="font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase">Comunidad</span>
+        <span style="font-weight:300;font-size:11.5px;color:rgba(255,255,255,.75);max-width:110px;line-height:1.3">la base compartida de las divisiones</span>
+      </div>
+      <div style="position:absolute;left:480px;top:76px;transform:translate(-50%,-50%);background:#fff;border:1.5px solid #10069F;border-radius:999px;padding:11px 22px;font-weight:700;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">Nivel 1 · Cáscara</div>
+      <div style="position:absolute;left:800px;top:250px;transform:translate(-50%,-50%);background:#fff;border:1.5px solid #10069F;border-radius:999px;padding:11px 22px;font-weight:700;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">Nivel 2 · Aceleradora</div>
+      <div style="position:absolute;left:480px;top:424px;transform:translate(-50%,-50%);background:#fff;border:1.5px solid #10069F;border-radius:999px;padding:11px 22px;font-weight:700;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">Nivel 3 · Growth Partner</div>
+      <div style="position:absolute;left:160px;top:250px;transform:translate(-50%,-50%);background:#fff;border:1.5px solid #10069F;border-radius:999px;padding:11px 22px;font-weight:700;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">Marcas personales</div>
+    </div>
+  </div>
+
+  <div data-c="8" style="position:absolute;left:1120px;top:680px;width:1600px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;align-items:center;gap:16px">
+      <span style="flex:0 0 auto;width:50px;height:50px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">1</span>
+      <div>
+        <div style="font-weight:700;font-size:25px;letter-spacing:-.02em;text-transform:uppercase;line-height:1">Nivel 1 · Cáscara</div>
+        <div style="font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-top:5px">Programa principal B2C · motor de audiencia y filtro de ascenso</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+      <span style="background:#10069F;color:#fff;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase">USD 2.000</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:500;font-size:13px;color:#10069F">Cupo abierto · por lanzamiento</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:500;font-size:13px;color:#10069F">Grupal en vivo + módulos grabados</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px">
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 16px">
+        <div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:6px">Base actual · en vivo</div>
+        <p style="margin:0;font-weight:300;font-size:13px;line-height:1.5;color:#3A3A40">Identidad y posicionamiento · construcción de oferta · primeros movimientos de mercado</p>
+      </div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 16px;box-shadow:0 0 0 1.5px #10069F">
+        <div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:6px">Capa nueva · grabada, de Franco</div>
+        <p style="margin:0;font-weight:300;font-size:13px;line-height:1.5;color:#3A3A40">Marketing y adquisición · ventas y cierre · monetización y pricing · entrega de servicio</p>
+      </div>
+    </div>
+    <div style="margin-top:14px;border-top:1px solid rgba(10,10,12,.12);padding-top:12px">
+      <div style="font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#10069F;margin-bottom:6px">Quién aparece</div>
+      <p style="margin:0;font-weight:300;font-size:13.5px;line-height:1.5;color:#3A3A40"><b style="font-weight:700">Fede, Juana, Teo y Segundo en vivo</b>, con marcas que venden este nivel. <b style="font-weight:700">Franco solo grabado</b>, sin vender.</p>
+    </div>
+    <p style="margin:14px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;line-height:1.45;color:#55555C">La capa nueva es lo que sube el ticket de 1.200 a 2.000 — y al mismo tiempo lo que instala el deseo del Nivel 2: <b style="font-weight:700;font-style:normal;color:#10069F">el alumno recibe el conocimiento completo, pero no el criterio aplicado a su caso.</b></p>
+  </div>
+
+  <div data-c="9" style="position:absolute;left:2920px;top:680px;width:1600px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px;box-shadow:0 0 0 1.5px #10069F">
+    <div style="display:flex;align-items:center;gap:16px">
+      <span style="flex:0 0 auto;width:50px;height:50px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">2</span>
+      <div>
+        <div style="font-weight:700;font-size:25px;letter-spacing:-.02em;text-transform:uppercase;line-height:1">Nivel 2 · Aceleradora</div>
+        <div style="font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-top:5px">Cohorte cerrada de 90 días · el oficio se vuelve negocio</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+      <span style="background:#10069F;color:#fff;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase">USD 3.500 · 4.000 en cuotas</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:500;font-size:13px;color:#10069F">16 por cohorte</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:500;font-size:13px;color:#10069F">7 sesiones 1-1 por alumno</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:500;font-size:13px;color:#10069F">No es evergreen · todo en vivo</span>
+    </div>
+    <div style="margin-top:14px;display:flex;flex-direction:column">
+      <div style="display:grid;grid-template-columns:120px 1fr 150px;gap:12px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Día 0</span><span style="font-weight:300;color:#3A3A40">Onboarding y setup operativo</span><span style="font-weight:700;text-align:right">Teo</span></div>
+      <div style="display:grid;grid-template-columns:120px 1fr 150px;gap:12px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Semana 1</span><span style="font-weight:300;color:#3A3A40">Clarity call · plan de 90 días · 1-1</span><span style="font-weight:700;text-align:right">Facu</span></div>
+      <div style="display:grid;grid-template-columns:120px 1fr 150px;gap:12px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Semana 1</span><span style="font-weight:300;color:#3A3A40">Piso común · los tres frentes en la misma semana</span><span style="font-weight:700;text-align:right">Fede · Juana · Teo</span></div>
+      <div style="display:grid;grid-template-columns:120px 1fr 150px;gap:12px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Día 30</span><span style="font-weight:300;color:#3A3A40">Punto de definición · se elige roadmap · 1-1</span><span style="font-weight:700;text-align:right">Franco</span></div>
+      <div style="display:grid;grid-template-columns:120px 1fr 150px;gap:12px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Días 31–90</span><span style="font-weight:300;color:#3A3A40">Ejecución del roadmap · grupal + 1-1 alternadas</span><span style="font-weight:700;text-align:right">Lead según roadmap</span></div>
+      <div style="display:grid;grid-template-columns:120px 1fr 150px;gap:12px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Día 90</span><span style="font-weight:300;color:#3A3A40">Cierre y roadmap a 6 meses · 1-1</span><span style="font-weight:700;text-align:right">Franco</span></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+      <span style="border:1px solid rgba(10,10,12,.25);border-radius:999px;padding:7px 14px;font-weight:500;font-size:12px;color:#3A3A40"><b style="font-weight:700;color:#10069F">A</b> · Oferta y ventas — Franco</span>
+      <span style="border:1px solid rgba(10,10,12,.25);border-radius:999px;padding:7px 14px;font-weight:500;font-size:12px;color:#3A3A40"><b style="font-weight:700;color:#10069F">B</b> · Contenido y equipo — Fede</span>
+      <span style="border:1px solid rgba(10,10,12,.25);border-radius:999px;padding:7px 14px;font-weight:500;font-size:12px;color:#3A3A40"><b style="font-weight:700;color:#10069F">C</b> · Estructura y servicio — Facu</span>
+    </div>
+    <p style="margin:12px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40"><b style="font-weight:700;color:#10069F;text-transform:uppercase;letter-spacing:.1em;font-size:11px">Filtro &nbsp;</b>Facturación de 1 a 4k inconsistente · oferta armada y en movimiento · primeros clientes ya pasados.</p>
+    <p style="margin:10px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40"><b style="font-weight:700;color:#10069F;text-transform:uppercase;letter-spacing:.1em;font-size:11px">La cuenta &nbsp;</b>Comunica desde <b style="font-weight:700">Cáscara Founders</b>, cuenta nueva y propia del nivel. Privada hasta el 30 de agosto, pública desde el 1 de septiembre.</p>
+    <p style="margin:8px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40"><b style="font-weight:700;color:#10069F;text-transform:uppercase;letter-spacing:.1em;font-size:11px">La división &nbsp;</b>Las grupales son de Fede, Juana y Teo; las 1-1 son de Facu y Franco. <b style="font-weight:700">Franco no aparece en ninguna grupal</b>: su frente comercial entra por las 1-1.</p>
+    <p style="margin:10px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14.5px;line-height:1.4;color:#55555C">Los founders entregan, <b style="font-weight:700;font-style:normal;color:#10069F">una sola marca vende</b>. El Founder System de F3 se discontinúa el día que abre la primera cohorte.</p>
+  </div>
+
+  <div data-c="10" style="position:absolute;left:4720px;top:680px;width:1600px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;align-items:center;gap:16px">
+      <span style="flex:0 0 auto;width:50px;height:50px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">3</span>
+      <div>
+        <div style="font-weight:700;font-size:25px;letter-spacing:-.02em;text-transform:uppercase;line-height:1">Nivel 3 · Growth Partner</div>
+        <div style="font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-top:5px">Sociedad sobre proyectos grandes · rentabilidad y prueba</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+      <span style="background:#10069F;color:#fff;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase">Setup fee + % sobre profit</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:500;font-size:13px;color:#10069F">8 cuentas · 3 ocupadas · 5 disponibles</span>
+    </div>
+    <div style="margin-top:14px;display:flex;flex-direction:column">
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:14px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Split</span><span style="font-weight:300;color:#3A3A40">60% partner / 40% Cáscara, sobre el <b style="font-weight:700">profit</b> después de costos directos — no revenue</span></div>
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:14px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Setup fee</span><span style="font-weight:300;color:#3A3A40">Único, al arranque, acreditable contra el porcentaje — reemplaza al fee mensual</span></div>
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:14px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Línea de base</span><span style="font-weight:300;color:#3A3A40">Promedio de los tres meses previos, congelado · los activos preexistentes quedan afuera</span></div>
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:14px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Plazo</span><span style="font-weight:300;color:#3A3A40">6 meses + renovación de 6 · liquidación mensual con cierre por informe</span></div>
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:14px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Propiedad intelectual</span><span style="font-weight:300;color:#3A3A40">Del cliente, con <b style="font-weight:700">uso como caso previa autorización</b> — la cláusula que alimenta la demanda del nivel</span></div>
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:14px;padding:7px 0;border-top:1px solid rgba(10,10,12,.12);font-size:13px"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Piso de calificación</span><span style="font-weight:300;color:#3A3A40">30k mensuales proyectados a 6 meses, con activo real</span></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+      <span style="border:1px solid rgba(10,10,12,.25);border-radius:999px;padding:7px 14px;font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#3A3A40">Producto</span>
+      <span style="border:1px solid rgba(10,10,12,.25);border-radius:999px;padding:7px 14px;font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#3A3A40">Contenido</span>
+      <span style="border:1px solid rgba(10,10,12,.25);border-radius:999px;padding:7px 14px;font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#3A3A40">Comercial</span>
+      <span style="border:1px solid rgba(10,10,12,.25);border-radius:999px;padding:7px 14px;font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#3A3A40">Operaciones</span>
+      <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#55555C;align-self:center">las cuatro áreas que pone Cáscara</span>
+    </div>
+    <p style="margin:14px 0 0;font-weight:300;font-size:13.5px;line-height:1.5;color:#3A3A40">Ocupadas: <b style="font-weight:700">MySaint, Delfi Ferro y Cáscara</b>. Se gana cuando el negocio gana, <b style="font-weight:700">sobre lo que se construye en conjunto</b> — no sobre lo que ya estaba.</p>
+  </div>
+
+
+  <div data-c="12" style="position:absolute;text-align:center;left:80px;top:1686px;width:1000px;height:auto;z-index:1;background:#E6E3DE;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:30px 32px;display:flex;align-items:center">
+    <p style="margin:0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:19px;line-height:1.35;color:#0A0A0C">El nivel de abajo <span style="color:#10069F">genera el deseo del de arriba sin que nadie tenga que vender nada.</span></p>
+  </div>
+
+  <div data-c="13" style="position:absolute;left:2560px;top:1460px;width:1240px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.1">Contenido por nivel <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">— los registros no se cruzan.</span></div>
+    <div style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F;margin-top:6px">Un registro, un evento de conversión</div>
+    <div style="margin-top:12px;display:flex;flex-direction:column">
+      <div style="padding:11px 0;border-top:1px solid rgba(10,10,12,.12)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-weight:700;font-size:13.5px;text-transform:uppercase;color:#10069F">Nivel 1</span><span style="font-weight:700;font-size:13.5px;text-align:right">Fede · Juana · Teo · Segundo</span></div>
+        <div style="font-weight:300;font-size:13.5px;line-height:1.4;color:#3A3A40;margin-top:5px">Oficio: proceso creativo, criterio, cómo trabajar mejor</div>
+        <div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">→ <b style="font-weight:700;color:#0A0A0C">Inscripción a Cáscara</b></div>
+      </div>
+      <div style="padding:11px 0;border-top:1px solid rgba(10,10,12,.12)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-weight:700;font-size:13.5px;text-transform:uppercase;color:#10069F">Nivel 2</span><span style="font-weight:700;font-size:13.5px;text-align:right">Franco</span></div>
+        <div style="font-weight:300;font-size:13.5px;line-height:1.4;color:#3A3A40;margin-top:5px">Negocio: estructura, precios, clientes, márgenes, escala</div>
+        <div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">→ <b style="font-weight:700;color:#0A0A0C">Cohorte de la Aceleradora</b></div>
+      </div>
+      <div style="padding:11px 0;border-top:1px solid rgba(10,10,12,.12)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-weight:700;font-size:13.5px;text-transform:uppercase;color:#10069F">Nivel 3</span><span style="font-weight:700;font-size:13.5px;text-align:right">Ninguna</span></div>
+        <div style="font-weight:300;font-size:13.5px;line-height:1.4;color:#3A3A40;margin-top:5px">Prueba: casos de las cuentas partner, publicados desde la marca de Franco</div>
+        <div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">→ <b style="font-weight:700;color:#0A0A0C">Conversación privada</b></div>
+      </div>
+    </div>
+    <p style="margin:14px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;line-height:1.4;color:#55555C">El Nivel 3 no se vende: <b style="font-weight:700;font-style:normal;color:#10069F">se otorga</b>. La cláusula de autorización de caso es el canal de adquisición del nivel entero.</p>
+  </div>
+
+  <div data-c="41" style="position:absolute;left:3860px;top:1460px;width:2460px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.1">Tangibles del Nivel 2 <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">— lo que se lleva puesto.</span></div>
+      <span style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Es el piso, no el cierre</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px">
+      <div style="border-top:3px solid #10069F;padding-top:10px"><div style="font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15">Templates de oferta y de trabajo</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:5px">en el onboarding</div></div>
+      <div style="border-top:3px solid #10069F;padding-top:10px"><div style="font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15">Proceso de ventas</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:5px">durante el programa</div></div>
+      <div style="border-top:3px solid #10069F;padding-top:10px"><div style="font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15">Estructura de entrega de servicio</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:5px">durante el programa</div></div>
+      <div style="border-top:3px solid #10069F;padding-top:10px"><div style="font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15">Dashboard de métricas</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:5px">durante el programa</div></div>
+      <div style="border-top:3px solid #10069F;padding-top:10px"><div style="font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15">Biblioteca de libros y recursos</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:5px">permanente</div></div>
+      <div style="border-top:3px solid #10069F;padding-top:10px"><div style="font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15">Activos utilizables de la biblioteca interna</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:5px">permanente</div></div>
+    </div>
+    <p style="margin:16px 0 0;font-weight:300;font-size:13.5px;line-height:1.45;color:#3A3A40">El acceso a las cinco cabezas es lo que sostiene el precio contra cualquier programa de un solo consultor. <b style="font-weight:700">Hay bastante más para sumar de la biblioteca interna.</b></p>
+  </div>
+
+  <!-- 02 estructura -->
+  <div data-c="14" style="position:absolute;left:80px;top:2261px;width:1060px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-bottom:14px">Propiedad · la sociedad ampliada</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#10069F">Facu 26,67</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#10069F">Fede 26,67</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#10069F">Juana 26,67</span>
+      <span style="background:#10069F;border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff">Franco 10</span>
+      <span style="background:#10069F;border:1.5px solid #10069F;border-radius:999px;padding:8px 16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff">Teo 10</span>
+    </div>
+    <p style="margin:16px 0 0;font-weight:300;font-size:13.5px;line-height:1.45;color:#55555C">La marca pertenece a la sociedad. El detalle del equity, el vesting y los caminos vive en <b style="font-weight:700;color:#10069F">03 · Propiedad</b>.</p>
+  </div>
+
+  <div data-c="15" style="position:absolute;text-align:center;left:1240px;top:2261px;width:1060px;height:auto;z-index:1;background:#10069F;color:#fff;border-radius:16px;padding:30px 32px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px">
+    <div style="font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#AEB6FF">Marca madre · una sola identidad</div>
+    <div style="font-weight:700;font-size:60px;letter-spacing:-.03em;line-height:1">cáscara</div>
+    <p style="margin: 0; font-weight: 300; font-size: 14px; line-height: 1.45; color: rgba(255,255,255,.82); max-width: 42ch; width: 346px; height: 64px">La casa de las divisiones. F3 deja de existir como marca pública. La comunidad es la base compartida de todas.</p>
+  </div>
+
+  <div data-c="16" style="position:absolute;text-align:center;left:2400px;top:2372px;transform:translateY(-50%);width:560px;height:auto;z-index:1;border:1.5px dashed #10069F;border-radius:16px;padding:30px 32px;background:rgba(255,255,255,.7)">
+    <div style="font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#10069F;margin-bottom:10px">Licencia de marca</div>
+    <p style="margin:0;font-weight:300;font-size:14px;line-height:1.5;color:#3A3A40">Cada división opera con licencia de uso de la marca, la identidad y el posicionamiento. La licencia <b style="font-weight:700">no otorga participación sobre la titularidad</b>; y la titularidad <b style="font-weight:700">no habilita a reclamar el resultado económico</b> de una división.</p>
+  </div>
+
+  <div data-c="17" style="position:absolute;left:80px;top:2601px;width:1060px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px;box-shadow:0 0 0 1.5px #10069F">
+    <div style="display:flex;align-items:center;gap:16px">
+      <span style="flex:0 0 auto;width:50px;height:50px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">1</span>
+      <div>
+        <div style="font-weight:700;font-size:26px;letter-spacing:-.02em;text-transform:uppercase;line-height:1">Universidad Cáscara</div>
+        <div style="font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-top:5px">Educación · niveles 1 y 2</div>
+      </div>
+    </div>
+    <p style="margin:14px 0 0;font-weight:300;font-size:14.5px;line-height:1.45;color:#3A3A40">La división del producto: el <b style="font-weight:700">Programa B2C</b> y la <b style="font-weight:700">Aceleradora</b>, cada uno con su propio método de reparto.</p>
+    <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px">
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 18px"><div style="font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Programa · Nivel 1</div><div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">Sistema de puntos sobre el <b style="font-weight:700">65%</b> del profit · caja central <b style="font-weight:700">30%</b> · Segundo <b style="font-weight:700">5%</b></div></div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 18px"><div style="font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Aceleradora · Nivel 2</div><div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">Tabla fija por rol, revisada por trimestre · caja <b style="font-weight:700">20%</b>, dentro de la tabla</div></div>
+    </div>
+    <p style="margin:16px 0 0;font-weight:300;font-size:13.5px;line-height:1.45;color:#55555C">Cada unidad usa el método que corresponde a su naturaleza: <b style="font-weight:700;color:#0A0A0C">scoring donde la contribución varía, tabla donde los roles son estables</b>.</p>
+  </div>
+
+  <div data-c="18" style="position:absolute;left:1240px;top:2601px;width:1060px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;align-items:center;gap:16px">
+      <span style="flex:0 0 auto;width:50px;height:50px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">2</span>
+      <div>
+        <div style="font-weight:700;font-size:26px;letter-spacing:-.02em;text-transform:uppercase;line-height:1">Cáscara Growth</div>
+        <div style="font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-top:5px">Growth partner · Nivel 3</div>
+      </div>
+    </div>
+    <p style="margin:14px 0 0;font-weight:300;font-size:14.5px;line-height:1.45;color:#3A3A40">Se construye y opera el negocio digital junto al founder. Cáscara pone estructura, equipo y sistema; el partner pone marca, audiencia y credibilidad.</p>
+    <div style="margin-top:16px">
+      <div style="display:flex;height:32px;border-radius:8px;overflow:hidden">
+        <div style="width:75%;background:#10069F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;letter-spacing:.05em">GROWTH 30</div>
+        <div style="width:25%;background:#DBD7D2;color:#0A0A0C;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;letter-spacing:.05em">CONTENIDO 10</div>
+      </div>
+      <div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;color:#55555C;margin-top:7px">el 40% de Cáscara, partido en dos patas</div>
+    </div>
+    <div style="margin-top:14px;border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 18px"><div style="font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Reparto por personas</div><div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">Sin base fija: se define <b style="font-weight:700">proyecto por proyecto</b> según la participación efectiva · caja central <b style="font-weight:700">10%</b></div></div>
+    <p style="margin:16px 0 0;font-weight:300;font-size:13.5px;line-height:1.45;color:#55555C">Quien no participa de un growth <b style="font-weight:700;color:#0A0A0C">no cobra de ese growth</b>. El PM es costo directo, no participante.</p>
+  </div>
+
+  <div data-c="19" style="position:absolute;left:2400px;top:2601px;width:1060px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;align-items:center;gap:16px">
+      <span style="flex:0 0 auto;width:50px;height:50px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">3</span>
+      <div>
+        <div style="font-weight:700;font-size:26px;letter-spacing:-.02em;text-transform:uppercase;line-height:1">0800 Cáscara</div>
+        <div style="font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-top:5px">Estudio creativo · producción</div>
+      </div>
+    </div>
+    <p style="margin:14px 0 0;font-weight:300;font-size:14.5px;line-height:1.45;color:#3A3A40">Producción y creatividad, con lógica de agencia y economía separada. Un equipo con <b style="font-weight:700">tres responsabilidades</b>, no tres unidades independientes.</p>
+    <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px">
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 18px"><div style="font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Sin revenue share</div><div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">Fijo garantizado + producción a tarifario, con la escalera atada a la <b style="font-weight:700">facturación global</b></div></div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 18px"><div style="font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Profit First</div><div style="font-weight:300;font-size:13.5px;color:#3A3A40;margin-top:5px">El profit de Cáscara se toma <b style="font-weight:700">antes</b> de la distribución a socios · caja central <b style="font-weight:700">30%</b></div></div>
+    </div>
+    <p style="margin:16px 0 0;font-weight:300;font-size:13.5px;line-height:1.45;color:#55555C">Un equipo, un número, <b style="font-weight:700;color:#0A0A0C">la misma escalera para todos</b>. El detalle vive en <b style="font-weight:700;color:#10069F">04 · La economía</b>.</p>
+  </div>
+
+  <div data-c="20" style="position:absolute;left:80px;top:3061px;width:3380px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase">Estructura empresarial <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">— cada uno, una función y una marca.</span></div>
+      <span style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Cuatro direcciones + growth</span>
+    </div>
+    <div style="margin-top:14px">
+      <div style="display:grid;grid-template-columns:104px 1fr 150px 1.15fr 1.15fr;gap:14px;padding-bottom:8px;border-bottom:1.5px solid #10069F">
+        <span style="font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Persona</span>
+        <span style="font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Función interna</span>
+        <span style="font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Marca vende</span>
+        <span style="font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Entrega en</span>
+        <span style="font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#10069F">Cobra en</span>
+      </div>
+      <div style="display:grid;grid-template-columns:104px 1fr 150px 1.15fr 1.15fr;gap:14px;padding:10px 0;border-bottom:1px solid rgba(10,10,12,.12);font-size:13.5px"><span style="font-weight:700;text-transform:uppercase">Facu</span><span style="font-weight:300;color:#3A3A40">Estructura y gestión</span><span style="font-weight:300;color:#8C8C90">Ninguna</span><span style="font-weight:300;color:#3A3A40">N2 · 1-1 · roadmap C</span><span style="font-weight:300;color:#3A3A40">Tabla del N2 <b style="font-weight:700">20%</b> · growth 30</span></div>
+      <div style="display:grid;grid-template-columns:104px 1fr 150px 1.15fr 1.15fr;gap:14px;padding:10px 0;border-bottom:1px solid rgba(10,10,12,.12);font-size:13.5px"><span style="font-weight:700;text-transform:uppercase">Fede</span><span style="font-weight:300;color:#3A3A40">Dirección de contenido</span><span style="font-weight:300;color:#3A3A40">Nivel 1</span><span style="font-weight:300;color:#3A3A40">N1 en vivo · N2 grupal · roadmap B</span><span style="font-weight:300;color:#3A3A40">Puntos del N1 · tabla N2 <b style="font-weight:700">10%</b> · contenido growth 10</span></div>
+      <div style="display:grid;grid-template-columns:104px 1fr 150px 1.15fr 1.15fr;gap:14px;padding:10px 0;border-bottom:1px solid rgba(10,10,12,.12);font-size:13.5px"><span style="font-weight:700;text-transform:uppercase">Juana</span><span style="font-weight:300;color:#3A3A40">Dirección creativa</span><span style="font-weight:300;color:#3A3A40">Nivel 1</span><span style="font-weight:300;color:#3A3A40">N1 en vivo · N2 grupal</span><span style="font-weight:300;color:#3A3A40">Puntos del N1 · tabla N2 <b style="font-weight:700">10%</b> · contenido growth 10</span></div>
+      <div style="display:grid;grid-template-columns:104px 1fr 150px 1.15fr 1.15fr;gap:14px;padding:10px 0;border-bottom:1px solid rgba(10,10,12,.12);font-size:13.5px"><span style="font-weight:700;text-transform:uppercase">Teo</span><span style="font-weight:300;color:#3A3A40">Dirección de operaciones</span><span style="font-weight:300;color:#3A3A40">Nivel 1</span><span style="font-weight:300;color:#3A3A40">N1 en vivo · N2 onboarding y grupal</span><span style="font-weight:300;color:#3A3A40">Puntos del N1 · tabla N2 <b style="font-weight:700">10%</b> · growth 30</span></div>
+      <div style="display:grid;grid-template-columns:104px 1fr 150px 1.15fr 1.15fr;gap:14px;padding:10px 0;border-bottom:1px solid rgba(10,10,12,.12);font-size:13.5px"><span style="font-weight:700;text-transform:uppercase">Segundo</span><span style="font-weight:300;color:#3A3A40">Equipo Nivel 1</span><span style="font-weight:300;color:#3A3A40">Nivel 1</span><span style="font-weight:300;color:#3A3A40">N1 en vivo</span><span style="font-weight:300;color:#3A3A40"><b style="font-weight:700">5%</b> del profit del N1</span></div>
+      <div style="display:grid;grid-template-columns:104px 1fr 150px 1.15fr 1.15fr;gap:14px;padding:10px 0;border-bottom:1px solid rgba(10,10,12,.12);font-size:13.5px;background:rgba(16,6,159,.04)"><span style="font-weight:700;text-transform:uppercase;color:#10069F">Franco</span><span style="font-weight:300;color:#3A3A40">Growth</span><span style="font-weight:700;color:#10069F">Nivel 2</span><span style="font-weight:300;color:#3A3A40">N1 grabado · N2 1-1 · N3 dirección</span><span style="font-weight:300;color:#3A3A40">Puntos del N1 · tabla N2 <b style="font-weight:700">20%</b> · growth 30</span></div>
+    </div>
+    <p style="margin:14px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:15px;line-height:1.4;color:#55555C">Franco es el único sin departamento y Facu el único sin marca — una simetría deliberada: <b style="font-weight:700;font-style:normal;color:#10069F">capacidad comercial pura y capacidad estructural pura.</b></p>
+  </div>
+
+  <!-- 03 propiedad -->
+  <div data-c="21" style="position:absolute;left:3620px;top:2916px;width:820px;height:auto;z-index:1;background:#E6E3DE;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:30px 32px">
+    <div style="font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#10069F;margin-bottom:14px">Qué determina el equity</div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="background:#FFFFFF;border-radius:12px;padding:14px 18px"><div style="font-weight:700;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#10069F;margin-bottom:5px">Sí · tres funciones</div><p style="margin:0;font-weight:300;font-size:13.5px;line-height:1.45;color:#3A3A40"><b style="font-weight:700;color:#0A0A0C">Propiedad de la marca</b>, <b style="font-weight:700;color:#0A0A0C">reparto en caso de venta</b> y <b style="font-weight:700;color:#0A0A0C">dividendos</b> cuando la sociedad distribuye.</p></div>
+      <div style="background:#FFFFFF;border-radius:12px;padding:14px 18px"><div style="font-weight:700;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#8C8C90;margin-bottom:5px">No · lo que no hace</div><p style="margin:0;font-weight:300;font-size:13.5px;line-height:1.45;color:#3A3A40">No determina el ingreso mensual de nadie: los retiros por trabajo salen de las tablas de cada división.</p></div>
+    </div>
+    <p style="margin:14px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:18px;color:#0A0A0C">El equity dice de quién es la empresa. <span style="color:#10069F">Las tablas dicen cuánto cobra cada uno.</span></p>
+  </div>
+
+  <div data-c="22" style="position:absolute;left:3620px;top:2261px;width:2700px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px;box-shadow:0 0 0 1.5px #10069F">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:25px;letter-spacing:-.02em;text-transform:uppercase">La nueva estructura <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">de propiedad.</span></div>
+      <span style="font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#10069F">20% de late founders</span>
+    </div>
+    <div style="margin-top:16px">
+      <div style="font-weight:500;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#8C8C90;margin-bottom:8px">Antes · 3.000 acciones</div>
+      <div style="display:flex;height:40px;border-radius:8px;overflow:hidden;gap:2px">
+        <div style="width:33.33%;background:#FFFFFF;border:1.5px solid rgba(10,10,12,.25);box-sizing:border-box;color:#55555C;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;letter-spacing:.04em">FACU 33,33</div>
+        <div style="width:33.33%;background:#FFFFFF;border:1.5px solid rgba(10,10,12,.25);box-sizing:border-box;color:#55555C;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;letter-spacing:.04em">FEDE 33,33</div>
+        <div style="width:33.33%;background:#FFFFFF;border:1.5px solid rgba(10,10,12,.25);box-sizing:border-box;color:#55555C;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;letter-spacing:.04em">JUANA 33,33</div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;margin:8px 0"><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:24px;color:#10069F;line-height:1">↓ se emiten 750 acciones nuevas</span></div>
+    <div>
+      <div style="font-weight:500;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#10069F;margin-bottom:8px">Después · 3.750 acciones</div>
+      <div style="display:flex;height:50px;border-radius:8px;overflow:hidden;gap:2px">
+        <div style="width:26.67%;background:#10069F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13.5px;letter-spacing:.04em">FACU 26,67</div>
+        <div style="width:26.67%;background:#10069F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13.5px;letter-spacing:.04em">FEDE 26,67</div>
+        <div style="width:26.67%;background:#10069F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13.5px;letter-spacing:.04em">JUANA 26,67</div>
+        <div style="width:10%;background:#DBD7D2;color:#0A0A0C;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12.5px;letter-spacing:.02em">FRANCO 10</div>
+        <div style="width:10%;background:#DBD7D2;color:#0A0A0C;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12.5px;letter-spacing:.02em">TEO 10</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:16px">
+      <div style="border-top:3px solid #10069F;padding-top:10px">
+        <div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Se emite, no se transfiere</div>
+        <p style="margin:5px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Ningún fundador vende ni cede su paquete: conservan sus 1.000 acciones. <b style="font-weight:700">Lo que cambia es el denominador</b>, no lo que cada uno tiene en la mano.</p>
+      </div>
+      <div style="border-top:3px solid #10069F;padding-top:10px">
+        <div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Dilución idéntica</div>
+        <p style="margin:5px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Cada fundador pasa de 33,33 a 26,67: la dilución es <b style="font-weight:700">igual para los tres</b> y el equilibrio relativo se mantiene. Nadie financia la incorporación con su parte.</p>
+      </div>
+      <div style="border-top:3px solid #10069F;padding-top:10px">
+        <div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Así crece una empresa</div>
+        <p style="margin:5px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Es el mecanismo estándar: cuando una compañía suma a alguien que cambia su techo, <b style="font-weight:700">emite acciones nuevas</b> en lugar de repartir las viejas. Si hubiera que ceder del paquete propio, sumar gente sería un castigo individual y nadie lo haría.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;border-top:1px solid rgba(10,10,12,.12);padding-top:14px">
+      <div style="border-top:3px solid #10069F;padding-top:10px">
+        <div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Cómo lo hacen las startups</div>
+        <p style="margin:5px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Toda startup que escala incorpora <b style="font-weight:700">C-levels y operadores clave con equity emitido</b>, no con sueldo solamente: un paquete del 10–15% reservado para los que llegan después, con <b style="font-weight:700">vesting de 4 años y cliff de 1</b> — exactamente el mecanismo que estamos aplicando. Es lo que alinea a quien entra con el resultado de largo plazo en vez de con el mes.</p>
+      </div>
+      <div style="border-top:3px solid #10069F;padding-top:10px">
+        <div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Por qué conviene diluirse</div>
+        <p style="margin:5px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Porque no se compara el porcentaje contra sí mismo, sino <b style="font-weight:700">contra el valor de la empresa que ese porcentaje representa</b>. 26,67% de una compañía con aceleradora, growth y estudio propio vale más que 33,33% de la anterior. La torta más chica repartida entre menos manos es peor negocio que la torta grande.</p>
+      </div>
+    </div>
+  </div>
+
+  <div data-c="23" style="position:absolute;left:4560px;top:2916px;width:820px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="font-weight:700;font-size:22px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.05">Vesting <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">— para todos, fundadores incluidos.</span></div>
+    <p style="margin:10px 0 0;font-weight:300;font-size:13.5px;line-height:1.5;color:#3A3A40"><b style="font-weight:700">4 años, cliff de 12 meses.</b> Durante el cliff no se consolida nada: quien se va antes del año se va sin equity. Al cumplirlo se libera el 25% de golpe y la consolidación sigue mensual.</p>
+    <div style="margin-top:14px;display:flex;flex-direction:column">
+      <div style="padding:12px 0;border-top:1px solid rgba(10,10,12,.12)"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:700;font-size:14px;text-transform:uppercase">Fundadores</span><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">41,67%</span></div><div style="font-weight:300;font-size:12.5px;color:#55555C;margin-top:3px">Desde 12/2024 · 20 meses · cliff cumplido · 11,11 de 26,67 puntos c/u</div></div>
+      <div style="padding:12px 0;border-top:1px solid rgba(10,10,12,.12)"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:700;font-size:14px;text-transform:uppercase">Teo</span><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">25,00%</span></div><div style="font-weight:300;font-size:12.5px;color:#55555C;margin-top:3px">Desde 08/2025 · cliff cumplido este mes · 2,50 de 10 puntos</div></div>
+      <div style="padding:12px 0;border-top:1px solid rgba(10,10,12,.12)"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:700;font-size:14px;text-transform:uppercase">Franco</span><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F">0%</span></div><div style="font-weight:300;font-size:12.5px;color:#55555C;margin-top:3px">Desde 12/2025 · 8 meses · cliff en 12/2026 · 0 de 10 puntos</div></div>
+    </div>
+    <div style="margin-top:12px;border:1.5px dashed #10069F;border-radius:12px;padding:14px 18px">
+      <div style="font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:5px">Dividendos sobre el equity total</div>
+      <p style="margin:0;font-weight:300;font-size:13px;line-height:1.5;color:#3A3A40">El vesting protege el <b style="font-weight:700">valor de salida</b>; el dividendo distribuye el resultado del período trabajado. Si estuvo, le corresponde completo; si se va, deja de recibirlos.</p>
+    </div>
+    <p style="margin:12px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14.5px;color:#55555C">Sin vesting no es una incorporación de fundador, <b style="font-weight:700;font-style:normal;color:#10069F">es un regalo.</b></p>
+  </div>
+
+  <div data-c="24" style="position:absolute;left:5500px;top:2916px;width:820px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="font-weight:700;font-size:22px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.05">Más acciones: <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">tres caminos, cero negociación.</span></div>
+    <p style="margin:10px 0 0;font-weight:300;font-size:13px;line-height:1.5;color:#3A3A40">El rendimiento ya se paga en las tablas. El equity se mueve cuando alguien <b style="font-weight:700">cambia estructuralmente lo que es para la empresa</b>, no cuando tiene un trimestre bueno.</p>
+    <div style="margin-top:12px;display:flex;flex-direction:column">
+      <div style="display:flex;gap:12px;padding:9px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="flex:0 0 auto;width:30px;height:30px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F">1</span><p style="margin:0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40;padding-top:4px"><b style="font-weight:700">Grants por hito</b> — objetivo verificable acordado antes: qué, para cuándo, cuánto equity.</p></div>
+      <div style="display:flex;gap:12px;padding:9px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="flex:0 0 auto;width:30px;height:30px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F">2</span><p style="margin:0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40;padding-top:4px"><b style="font-weight:700">Compra a valuación</b> — quien quiere más participación, la paga con capital.</p></div>
+      <div style="display:flex;gap:12px;padding:9px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="flex:0 0 auto;width:30px;height:30px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F">3</span><p style="margin:0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40;padding-top:4px"><b style="font-weight:700">Aporte de negocio o activo</b> — una marca, cartera o unidad que factura se valúa y se paga con acciones nuevas. Es la lógica con la que se incorporó el aparato de growth.</p></div>
+    </div>
+    <div style="margin-top:12px;border-top:1px solid rgba(10,10,12,.12);padding-top:12px">
+      <div style="font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:5px">Reglas comunes · y cuándo se revisa</div>
+      <p style="margin:0;font-weight:300;font-size:13px;line-height:1.5;color:#3A3A40">Todo equity nuevo <b style="font-weight:700">se emite</b> (la dilución la comparten todos) y lleva su propio vesting. El cap table solo se abre por <b style="font-weight:700">capital, venta o cambio sostenido de dedicación</b> en dos trimestres — con cláusula de reapertura de buena fe si se contempla levantar capital.</p>
+    </div>
+  </div>
+
+  <div data-c="42" style="position:absolute;left:3620px;top:3493px;width:2700px;height:auto;z-index:1;background:#E6E3DE;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:26px 32px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:21px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.1">Qué es un late founder <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">— y por qué recibe equity real.</span></div>
+      <span style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Riesgo de fundador, no de empleado</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px">
+      <div style="background:#FFFFFF;border-radius:12px;padding:16px 20px"><div style="font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase">Founder</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:4px">desde cero, sin marca ni producto</div><p style="margin:8px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Equity fundacional completo.</p></div>
+      <div style="background:#FFFFFF;border-radius:12px;padding:16px 20px;box-shadow:0 0 0 1.5px #10069F"><div style="font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;color:#10069F">Late founder</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:4px">la empresa existe pero no está consolidada</div><p style="margin:8px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Equity de nivel fundador, <b style="font-weight:700">menor y con vesting</b>. Franco y Teo.</p></div>
+      <div style="background:#FFFFFF;border-radius:12px;padding:16px 20px"><div style="font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase">Empleado clave</div><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F;margin-top:4px">la empresa ya opera</div><p style="margin:8px 0 0;font-weight:300;font-size:13px;line-height:1.45;color:#3A3A40">Sueldo, honorario o revenue share.</p></div>
+    </div>
+    <p style="margin:16px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;line-height:1.4;color:#0A0A0C">Asume riesgo y responsabilidad de nivel fundador — <span style="color:#10069F">por eso recibe equity real y no opciones.</span></p>
+  </div>
+
+  <!-- 04 economía -->
+  <div data-c="25" style="position:absolute;left:80px;top:3848px;width:1120px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px;box-shadow:0 0 0 1.5px #10069F">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase">Nivel 1 · Sistema de puntos</div>
+      <span style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Revisión trimestral</span>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:7px 14px;font-weight:700;font-size:12px;color:#10069F">Caja 30%</span>
+      <span style="border:1.5px solid #10069F;border-radius:999px;padding:7px 14px;font-weight:700;font-size:12px;color:#10069F">Segundo 5%</span>
+      <span style="background:#10069F;border:1.5px solid #10069F;border-radius:999px;padding:7px 14px;font-weight:700;font-size:12px;color:#fff">Reparto por puntos 65%</span>
+    </div>
+    <div style="margin-top:12px;display:flex;flex-direction:column">
+      <div style="display:grid;grid-template-columns:1fr 52px;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid rgba(10,10,12,.12)"><div><div style="font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase">Growth y estrategia comercial</div><div style="font-weight:300;font-size:12px;color:#55555C;margin-top:3px">Arquitecto 100 · Ejecuta y contribuye 40 · Participa 20 · Acompaña 10</div></div><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F;text-align:right">40%</span></div>
+      <div style="display:grid;grid-template-columns:1fr 52px;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid rgba(10,10,12,.12)"><div><div style="font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase">Impacto del departamento</div><div style="font-weight:300;font-size:12px;color:#55555C;margin-top:3px">Core 100 · Importante 60 · Soporte 30 · No aplica 0</div></div><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F;text-align:right">30%</span></div>
+      <div style="display:grid;grid-template-columns:1fr 52px;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid rgba(10,10,12,.12)"><div><div style="font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase">Marca personal</div><div style="font-weight:300;font-size:12px;color:#55555C;margin-top:3px">Embajador 100 · Referente 70 · Presencia 40 · Sin uso 0</div></div><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F;text-align:right">15%</span></div>
+      <div style="display:grid;grid-template-columns:1fr 52px;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid rgba(10,10,12,.12)"><div><div style="font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase">Gerencia</div><div style="font-weight:300;font-size:12px;color:#55555C;margin-top:3px">Dirección general 100 · Acompañamiento estratégico 60</div></div><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:22px;color:#10069F;text-align:right">15%</span></div>
+    </div>
+    <div style="margin-top:12px;border-top:1px solid rgba(10,10,12,.12);padding-top:12px">
+      <div style="font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#10069F">Tablero vigente</div>
+      <div style="margin-top:10px;display:flex;flex-direction:column;gap:6px">
+        <div style="display:grid;grid-template-columns:58px 1fr 46px;gap:10px;align-items:center"><span style="font-weight:700;font-size:12.5px;text-transform:uppercase">Franco</span><span style="height:14px;background:rgba(10,10,12,.07);border-radius:4px;display:block"><span style="display:block;height:14px;width:96%;background:#10069F;border-radius:4px"></span></span><span style="font-weight:700;font-size:12.5px;text-align:right">24%</span></div>
+        <div style="display:grid;grid-template-columns:58px 1fr 46px;gap:10px;align-items:center"><span style="font-weight:700;font-size:12.5px;text-transform:uppercase">Fede</span><span style="height:14px;background:rgba(10,10,12,.07);border-radius:4px;display:block"><span style="display:block;height:14px;width:92%;background:#10069F;border-radius:4px"></span></span><span style="font-weight:700;font-size:12.5px;text-align:right">23%</span></div>
+        <div style="display:grid;grid-template-columns:58px 1fr 46px;gap:10px;align-items:center"><span style="font-weight:700;font-size:12.5px;text-transform:uppercase">Teo</span><span style="height:14px;background:rgba(10,10,12,.07);border-radius:4px;display:block"><span style="display:block;height:14px;width:84%;background:#10069F;border-radius:4px"></span></span><span style="font-weight:700;font-size:12.5px;text-align:right">21%</span></div>
+        <div style="display:grid;grid-template-columns:58px 1fr 46px;gap:10px;align-items:center"><span style="font-weight:700;font-size:12.5px;text-transform:uppercase">Juana</span><span style="height:14px;background:rgba(10,10,12,.07);border-radius:4px;display:block"><span style="display:block;height:14px;width:72%;background:#10069F;border-radius:4px"></span></span><span style="font-weight:700;font-size:12.5px;text-align:right">18%</span></div>
+        <div style="display:grid;grid-template-columns:58px 1fr 46px;gap:10px;align-items:center"><span style="font-weight:700;font-size:12.5px;text-transform:uppercase">Facu</span><span style="height:14px;background:rgba(10,10,12,.07);border-radius:4px;display:block"><span style="display:block;height:14px;width:56%;background:#10069F;border-radius:4px"></span></span><span style="font-weight:700;font-size:12.5px;text-align:right">14%</span></div>
+      </div>
+      <p style="margin:10px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#55555C">Marca pesa <b style="font-weight:700;color:#0A0A0C">15%</b> porque hoy las marcas del equipo operan detrás de la de Cáscara — con la escalera andando, cuatro marcas venden el N1 y el peso se revisa al alza el próximo trimestre. Franco y Facu en Sin uso de marca (comunican el N2) · Juana en Presencia · Teo entra como Referente, <b style="font-weight:700;color:#0A0A0C">con el estándar de cadencia como condición</b>.</p>
+    </div>
+    <div style="margin-top:12px;border:1.5px dashed #10069F;border-radius:12px;padding:12px 16px">
+      <div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:4px">Criterio objetivo de Marca</div>
+      <p style="margin:0;font-weight:300;font-size:12.5px;line-height:1.5;color:#3A3A40">Referente = cadencia sostenida en <b style="font-weight:700">10 de las 13 semanas</b> del trimestre, acordada antes, nunca retroactiva. Quien no la alcanza <b style="font-weight:700">baja automático y sin discusión personal</b>; el punto liberado se redistribuye en proporción al puntaje de los demás. Si Teo baja: 24 · 24 · 20 · 18 · 15.</p>
+    </div>
+    <div style="margin-top:12px;border-top:1px solid rgba(10,10,12,.12);padding-top:10px">
+      <div style="font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#10069F;margin-bottom:8px">Simulaciones · sobre el 65%</div>
+      <div style="display:flex;flex-direction:column;gap:4px;font-size:12.5px">
+        <div style="display:flex;justify-content:space-between"><span style="font-weight:300;color:#3A3A40">Profit 20.000 → reparto 13.000</span><span style="font-weight:700">Franco 3.120 · Facu 1.820</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="font-weight:300;color:#3A3A40">Profit 40.000 → reparto 26.000</span><span style="font-weight:700">Franco 6.240 · Facu 3.640</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="font-weight:300;color:#3A3A40">Profit 70.000 → reparto 45.500</span><span style="font-weight:700">Franco 10.920 · Facu 6.370</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-c="26" style="position:absolute;left:1300px;top:3848px;width:1520px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px;box-shadow:0 0 0 1.5px #10069F">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase">Nivel 2 · Tabla fija <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">por rol.</span></div>
+      <span style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Sobre el profit, revisada por trimestre</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.25fr 1fr;gap:26px;margin-top:14px">
+      <div style="display:flex;flex-direction:column">
+        <div style="display:grid;grid-template-columns:100px 1fr 44px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="font-weight:700;font-size:13px;text-transform:uppercase">Facu</span><span style="font-weight:300;font-size:12.5px;color:#3A3A40">Responsable del producto · clarity y 1-1</span><span style="font-weight:700;font-size:14px;text-align:right;color:#10069F">20%</span></div>
+        <div style="display:grid;grid-template-columns:100px 1fr 44px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="font-weight:700;font-size:13px;text-transform:uppercase">Franco</span><span style="font-weight:300;font-size:12.5px;color:#3A3A40">Growth y monetización · comunicación y cierre</span><span style="font-weight:700;font-size:14px;text-align:right;color:#10069F">20%</span></div>
+        <div style="display:grid;grid-template-columns:100px 1fr 44px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="font-weight:700;font-size:13px;text-transform:uppercase">Cáscara</span><span style="font-weight:300;font-size:12.5px;color:#3A3A40">Caja de la marca</span><span style="font-weight:700;font-size:14px;text-align:right;color:#10069F">20%</span></div>
+        <div style="display:grid;grid-template-columns:100px 1fr 44px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="font-weight:700;font-size:13px;text-transform:uppercase">Fede</span><span style="font-weight:300;font-size:12.5px;color:#3A3A40">Grupal semanal de contenido · lead roadmap B</span><span style="font-weight:700;font-size:14px;text-align:right;color:#10069F">10%</span></div>
+        <div style="display:grid;grid-template-columns:100px 1fr 44px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="font-weight:700;font-size:13px;text-transform:uppercase">Juana</span><span style="font-weight:300;font-size:12.5px;color:#3A3A40">Llamada grupal de creatividad</span><span style="font-weight:700;font-size:14px;text-align:right;color:#10069F">10%</span></div>
+        <div style="display:grid;grid-template-columns:100px 1fr 44px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid rgba(10,10,12,.12)"><span style="font-weight:700;font-size:13px;text-transform:uppercase">Teo</span><span style="font-weight:300;font-size:12.5px;color:#3A3A40">Onboarding y grupal semanal</span><span style="font-weight:700;font-size:14px;text-align:right;color:#10069F">10%</span></div>
+        <div style="display:grid;grid-template-columns:100px 1fr 44px;gap:12px;align-items:center;padding:8px 0;border-top:1px solid rgba(10,10,12,.12);background:rgba(16,6,159,.04)"><span style="font-weight:700;font-size:13px;text-transform:uppercase;color:#8C8C90">Operac.</span><span style="font-weight:300;font-size:12.5px;color:#8C8C90">Reservado, sin asignar: control de tiempos y entregas</span><span style="font-weight:700;font-size:14px;text-align:right;color:#8C8C90">10%</span></div>
+        <p style="margin:12px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#55555C">No hay costo de CSM ni de PM: <b style="font-weight:700;color:#0A0A0C">los roles operativos participan del reparto</b> en lugar de facturar como costo. El 10% reservado permite incorporar a alguien sin renegociar nada.</p>
+      </div>
+      <div>
+        <div style="font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#10069F;margin-bottom:8px">Costos directos, antes del reparto</div>
+        <div style="display:flex;flex-direction:column;gap:4px;font-size:12.5px">
+          <div style="display:flex;justify-content:space-between"><span style="font-weight:300;color:#3A3A40">Comisión comercial</span><span style="font-weight:700">19%</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="font-weight:300;color:#3A3A40">Gestión de contenido de la cuenta</span><span style="font-weight:700">1.500–2.000</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="font-weight:300;color:#3A3A40">Plataforma y herramientas</span><span style="font-weight:700">~500</span></div>
+        </div>
+        <div style="margin-top:14px;font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Simulación · 16 a 3.500</div>
+        <div style="margin-top:8px;display:flex;flex-direction:column;gap:4px;font-size:12.5px">
+          <div style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(10,10,12,.12);padding-bottom:4px"><span style="font-weight:300;color:#3A3A40">Cash collected</span><span style="font-weight:700">56.000</span></div>
+          <div style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(10,10,12,.12);padding-bottom:4px"><span style="font-weight:300;color:#3A3A40">Comisión + contenido + plataforma</span><span style="font-weight:700">−12.820</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:2px solid #10069F"><span style="font-weight:700;color:#10069F;text-transform:uppercase;letter-spacing:.06em;font-size:12px">Profit</span><span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:24px;color:#10069F;line-height:1">43.180</span></div>
+          <div style="display:flex;justify-content:space-between;padding-top:4px"><span style="font-weight:300;color:#3A3A40">Cada 20%</span><span style="font-weight:700">8.636</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="font-weight:300;color:#3A3A40">Cada 10%</span><span style="font-weight:700">4.318</span></div>
+        </div>
+        <p style="margin:12px 0 0;font-weight:300;font-size:12.5px;line-height:1.5;color:#55555C">Escenarios: 8 ventas → 19.340 · 12 → 30.510 · 16 → 43.180 · 16 a <b style="font-weight:700;color:#0A0A0C">4.900</b> (propuesta desde la 2ª cohorte) → 57.452.</p>
+      </div>
+    </div>
+  </div>
+
+  <div data-c="27" style="position:absolute;left:1300px;top:4389px;width:1520px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase">Caja central <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">— tasa por consumo.</span></div>
+      <span style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Siempre sobre profit</span>
+    </div>
+    <p style="margin:10px 0 0;font-weight:300;font-size:13.5px;line-height:1.45;color:#3A3A40">La tasa mide <b style="font-weight:700">consumo de estructura, no importancia</b>: una unidad que se apoya poco en el centro aporta poco.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px">
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 16px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:36px;color:#10069F;line-height:1">30%</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;margin-top:5px">Nivel 1</div><p style="margin:5px 0 0;font-weight:300;font-size:12px;line-height:1.4;color:#55555C">Producto, plataforma, marketing, comunidad, soporte</p></div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 16px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:36px;color:#10069F;line-height:1">20%</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;margin-top:5px">Nivel 2</div><p style="margin:5px 0 0;font-weight:300;font-size:12px;line-height:1.4;color:#55555C">Marca, comunidad y funnel · dentro de la tabla</p></div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 16px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:36px;color:#10069F;line-height:1">10%</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;margin-top:5px">Nivel 3</div><p style="margin:5px 0 0;font-weight:300;font-size:12px;line-height:1.4;color:#55555C">Marca y originación · solo acuerdos nuevos</p></div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:14px 16px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:36px;color:#10069F;line-height:1">30%</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;margin-top:5px">0800</div><p style="margin:5px 0 0;font-weight:300;font-size:12px;line-height:1.4;color:#55555C">Marca, comercial, herramientas, estructura</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;border-top:1px solid rgba(10,10,12,.12);padding-top:14px">
+      <div><span style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em">a · Reinversión y reserva &nbsp;</span><span style="font-weight:300;font-size:13px;color:#3A3A40">aportan todas las divisiones — marca, comunidad, producto, colchón</span></div>
+      <div><span style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em">b · Dividendos y ahorro &nbsp;</span><span style="font-weight:300;font-size:13px;color:#3A3A40">solo desde la porción de la sociedad: <b style="font-weight:700">ninguna división financia dividendos ajenos</b></span></div>
+    </div>
+  </div>
+
+  <div data-c="28" style="position:absolute;left:2940px;top:3848px;width:1520px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.05">Nivel 3 · La cascada <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">de growth.</span></div>
+    <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;align-items:start">
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#10069F">1</span><div><div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Profit del proyecto</div><p style="margin:4px 0 0;font-weight:300;font-size:13px;line-height:1.4;color:#3A3A40">Ingreso − producción a <b style="font-weight:700">tarifario partner</b>, comisión comercial, PM y soporte de operaciones.</p></div></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#10069F">2</span><div><div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Reparto con el partner</div><p style="margin:4px 0 0;font-weight:300;font-size:13px;line-height:1.4;color:#3A3A40">Participación sobre el resultado, no honorario fijo. Referencia: <b style="font-weight:700">60% partner / 40% Cáscara</b>.</p></div></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#10069F">3</span><div><div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Growth y contenido</div><p style="margin:4px 0 0;font-weight:300;font-size:13px;line-height:1.4;color:#3A3A40">El 40% se divide en <b style="font-weight:700">30 growth y 10 contenido</b>. Contenido cobra por tres vías: su 10, la venta de servicios a tarifario, y el empuje a la escalera de 0800.</p></div></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid #10069F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#10069F">4</span><div><div style="font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em">Reparto por personas</div><p style="margin:4px 0 0;font-weight:300;font-size:13px;line-height:1.4;color:#3A3A40">Proyecto por proyecto, según <b style="font-weight:700">participación efectiva</b>. El PM es costo directo, no participante.</p></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:13px 16px"><div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:5px">Growth y operaciones · el 30</div><div style="font-weight:700;font-size:14px">Facu · Franco · Teo</div></div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:13px 16px"><div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:5px">Contenido · el 10</div><div style="font-weight:700;font-size:14px">Fede · Juana</div></div>
+    </div>
+    <div style="margin-top:12px;border:1.5px dashed #10069F;border-radius:12px;padding:13px 16px">
+      <div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:4px">Cláusula de producción interna</div>
+      <p style="margin:0;font-weight:300;font-size:12.5px;line-height:1.5;color:#3A3A40">Todo proyecto de growth contrata su producción <b style="font-weight:700">dentro del ecosistema, vía 0800 a tarifario partner</b>, salvo excepción acordada al inicio. Es la contrapartida del 30/10.</p>
+    </div>
+    <div style="margin-top:14px;border-top:1px solid rgba(10,10,12,.12);padding-top:12px">
+      <div style="font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#10069F;margin-bottom:8px">Acuerdos cerrados y nuevos</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:14px;padding:8px 0;border-top:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#10069F">MySaint</span><span style="font-weight:300;color:#3A3A40">Cerrado · Teo, Facu, Fede, Franco · calcula sobre revenue: <b style="font-weight:700">única excepción, a corregir en la renovación</b></span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:14px;padding:8px 0;border-top:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#10069F">Daniela</span><span style="font-weight:300;color:#3A3A40">Cerrado · Enzo, Facu, Teo, Franco</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:14px;padding:8px 0;border-top:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#10069F">Delfi Ferro</span><span style="font-weight:300;color:#3A3A40">Alcanzado por el esquema nuevo · aporta a caja · <b style="font-weight:700">sus cláusulas se canonizan como estándar</b></span></div>
+      </div>
+      <p style="margin:10px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#55555C">Los cerrados no se modifican y no aportan el 10% a la caja. Los nuevos sí.</p>
+    </div>
+    <p style="margin:12px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14.5px;line-height:1.4;color:#55555C">El tarifario partner hace que producir para adentro <b style="font-weight:700;font-style:normal;color:#10069F">sea rentable y no un favor interno.</b></p>
+  </div>
+
+  <div data-c="29" style="position:absolute;left:4580px;top:3848px;width:1740px;height:auto;z-index:1;background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:16px;padding:30px 32px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-weight:700;font-size:23px;letter-spacing:-.02em;text-transform:uppercase">0800 · Profit First <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">por niveles.</span></div>
+      <span style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#10069F">Un solo tablero: la facturación global</span>
+    </div>
+    <p style="margin:10px 0 0;font-weight:300;font-size:13.5px;line-height:1.5;color:#3A3A40">Se invierte el orden de agencia: <b style="font-weight:700">el profit de Cáscara se toma como porcentaje fijo antes de la distribución a socios</b>. La caja se forma por diseño, no por sobrante. La facturación define el nivel, y el nivel define automáticamente cuánto cobra cada uno: no se negocian sueldos, el único debate mensual es cómo subir de nivel.</p>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px">
+      <div style="background:#E6E3DE;border-radius:12px;padding:12px 14px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F">paso 1</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;margin-top:4px">Producción 30%</div><p style="margin:4px 0 0;font-weight:300;font-size:11.5px;line-height:1.4;color:#3A3A40">De cada trabajo, al tarifario interno. Variable puro</p></div>
+      <div style="background:#E6E3DE;border-radius:12px;padding:12px 14px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F">paso 2</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;margin-top:4px">Caja intermedia</div><p style="margin:4px 0 0;font-weight:300;font-size:11.5px;line-height:1.4;color:#3A3A40">El 70% restante se acumula</p></div>
+      <div style="background:#E6E3DE;border-radius:12px;padding:12px 14px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F">paso 3</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;margin-top:4px">Fijos</div><p style="margin:4px 0 0;font-weight:300;font-size:11.5px;line-height:1.4;color:#3A3A40">Tres líderes y Azu, según escalera</p></div>
+      <div style="background:#10069F;border-radius:12px;padding:12px 14px;color:#fff"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#AEB6FF">paso 4</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;margin-top:4px">Profit Cáscara</div><p style="margin:4px 0 0;font-weight:300;font-size:11.5px;line-height:1.4;color:rgba(255,255,255,.85)">20% en niveles 1–2 · 30% desde nivel 3, antes que los socios</p></div>
+      <div style="background:#E6E3DE;border-radius:12px;padding:12px 14px"><div style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14px;color:#10069F">paso 5</div><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;margin-top:4px">Socios</div><p style="margin:4px 0 0;font-weight:300;font-size:11.5px;line-height:1.4;color:#3A3A40">Lo que queda: Facu, Fede y Juana</p></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;margin-top:16px">
+      <div>
+        <div style="font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#10069F;margin-bottom:8px">Las escaleras · saltos de 20.000 y 800</div>
+        <div style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1fr;gap:8px;padding-bottom:6px;border-bottom:1.5px solid #10069F;font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#10069F"><span>Nivel</span><span>Facturación</span><span style="text-align:right">Líder</span><span style="text-align:right">Azu</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1fr;gap:8px;padding:7px 0;border-bottom:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700">1</span><span style="font-weight:300;color:#3A3A40">hasta 20.000</span><span style="font-weight:700;text-align:right">1.200</span><span style="font-weight:700;text-align:right">1.200</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1fr;gap:8px;padding:7px 0;border-bottom:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700">2</span><span style="font-weight:300;color:#3A3A40">20.000 – 40.000</span><span style="font-weight:700;text-align:right">2.000</span><span style="font-weight:700;text-align:right">1.500</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1fr;gap:8px;padding:7px 0;border-bottom:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700">3</span><span style="font-weight:300;color:#3A3A40">40.000 – 60.000</span><span style="font-weight:700;text-align:right">2.800</span><span style="font-weight:700;text-align:right">2.000</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1fr;gap:8px;padding:7px 0;font-size:13px"><span style="font-weight:700">4</span><span style="font-weight:300;color:#3A3A40">más de 60.000</span><span style="font-weight:700;text-align:right">3.600</span><span style="font-weight:700;text-align:right">2.500</span></div>
+        <p style="margin:10px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#55555C">Piso de seguridad de <b style="font-weight:700;color:#0A0A0C">1.500</b> sobre fijo + producción · objetivo de producción propia por líder: <b style="font-weight:700;color:#0A0A0C">500–800</b> al tarifario.</p>
+      </div>
+      <div>
+        <div style="font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#10069F;margin-bottom:8px">Escenarios · qué cobra cada socio</div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:8px;padding-bottom:6px;border-bottom:1.5px solid #10069F;font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#10069F"><span>Facturación</span><span style="text-align:right">Fijos</span><span style="text-align:right">Profit</span><span style="text-align:right">C/ socio</span></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:8px;padding:7px 0;border-bottom:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700">15.000</span><span style="font-weight:300;text-align:right;color:#3A3A40">4.800</span><span style="font-weight:300;text-align:right;color:#3A3A40">3.000</span><span style="font-weight:700;text-align:right;color:#10069F">900</span></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:8px;padding:7px 0;border-bottom:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700">30.000</span><span style="font-weight:300;text-align:right;color:#3A3A40">7.500</span><span style="font-weight:300;text-align:right;color:#3A3A40">6.000</span><span style="font-weight:700;text-align:right;color:#10069F">2.500</span></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:8px;padding:7px 0;border-bottom:1px solid rgba(10,10,12,.1);font-size:13px"><span style="font-weight:700">50.000</span><span style="font-weight:300;text-align:right;color:#3A3A40">10.400</span><span style="font-weight:300;text-align:right;color:#3A3A40">15.000</span><span style="font-weight:700;text-align:right;color:#10069F">3.200</span></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:8px;padding:7px 0;font-size:13px"><span style="font-weight:700">70.000</span><span style="font-weight:300;text-align:right;color:#3A3A40">13.300</span><span style="font-weight:300;text-align:right;color:#3A3A40">21.000</span><span style="font-weight:700;text-align:right;color:#10069F">4.900</span></div>
+        <p style="margin:10px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#55555C">La caja no es solo profit: a futuro afronta impuestos y gastos de contenido. El porcentaje es el <b style="font-weight:700;color:#0A0A0C">mínimo estructural, no el techo</b>.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;border-top:1px solid rgba(10,10,12,.12);padding-top:14px">
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:13px 16px"><div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:4px">Equilibrio contable · 12.000</div><p style="margin:0;font-weight:300;font-size:12.5px;line-height:1.45;color:#3A3A40">Con socios en cero, la estructura se paga sola. Por debajo, la caja principal cubre la diferencia.</p></div>
+      <div style="border:1px solid rgba(10,10,12,.14);border-radius:12px;padding:13px 16px;box-shadow:0 0 0 1.5px #10069F"><div style="font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#10069F;margin-bottom:4px">Equilibrio real · 30.000</div><p style="margin:0;font-weight:300;font-size:12.5px;line-height:1.45;color:#3A3A40">Producción, fijos, profit pleno y un retiro digno para los tres. <b style="font-weight:700">El objetivo comercial es cruzarlo.</b></p></div>
+    </div>
+    <p style="margin:12px 0 0;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:14.5px;line-height:1.4;color:#55555C">Entre 12.000 y 30.000 la división se sostiene sola pero los socios cobran poco: <b style="font-weight:700;font-style:normal;color:#10069F">es la zona de construcción.</b> Trabajos externos sin exclusividad, con regla de canal único.</p>
+  </div>
+
+  <!-- 05 decisiones -->
+
+
+    <div data-c="39" style="position:absolute;left:80px;top:5078px;width:3060px;height:auto;z-index:1;background:#E6E3DE;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:30px 32px">
+      <div style="font-weight:700;font-size:22px;letter-spacing:-.02em;text-transform:uppercase;line-height:1.1">Condiciones para <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;color:#10069F">levantar capital.</span></div>
+      <p style="margin:10px 0 0;font-weight:300;font-size:13.5px;line-height:1.5;color:#3A3A40">La estructura actual no pasa los filtros de un inversor institucional. Por orden de gravedad:</p>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px;align-items:start">
+        <div style="background:#FFFFFF;border-radius:12px;padding:13px 16px;box-shadow:0 0 0 1.5px #10069F"><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:#10069F">1 · Vesting fundador</div><p style="margin:5px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#3A3A40">El más grave y el más simple de corregir — <b style="font-weight:700;color:#0A0A0C">este acuerdo lo resuelve</b>.</p></div>
+        <div style="background:#FFFFFF;border-radius:12px;padding:13px 16px"><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:#10069F">2 · Tres socios sin desempate</div><p style="margin:5px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#3A3A40">Tres iguales sin mecanismo de desempate se lee como bloqueo.</p></div>
+        <div style="background:#FFFFFF;border-radius:12px;padding:13px 16px"><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:#10069F">3 · Sin pool de opciones</div><p style="margin:5px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#3A3A40">Se requiere 10–15%, constituido a costa de los accionistas existentes.</p></div>
+        <div style="background:#FFFFFF;border-radius:12px;padding:13px 16px"><div style="font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:#10069F">4 · El vehículo societario</div><p style="margin:5px 0 0;font-weight:300;font-size:12.5px;line-height:1.45;color:#3A3A40">Una LLC no emite preferidas: el estándar es <b style="font-weight:700;color:#0A0A0C">C-Corp con la operación local como subsidiaria</b>.</p></div>
+      </div>
+      <div style="margin-top:14px;border:1.5px dashed #10069F;border-radius:12px;padding:14px 18px">
+        <div style="font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#10069F;margin-bottom:5px">Consideración de fondo</div>
+        <p style="margin:0;font-weight:300;font-size:13px;line-height:1.5;color:#3A3A40">Educación más servicios es un negocio de márgenes buenos y <b style="font-weight:700">escala lineal</b>: buen negocio, mal encaje para venture. Lo que sí escala es el <b style="font-weight:700">Nivel 1 evergreen y el portfolio de participaciones del Nivel 3</b> — si levantar capital se vuelve objetivo, esa es la parte que hay que mostrar creciendo.</p>
+      </div>
+    </div>
+
+  <div data-c="40" style="position:absolute;left:3340px;top:5078px;width:2980px;height:auto;z-index:1;background:#10069F;color:#fff;border-radius:16px;padding:30px 32px">
+    <div style="font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#AEB6FF;margin-bottom:16px">Los siete principios</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px 26px;align-items:start">
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#fff">1</span><p style="margin:0;font-weight:300;font-size:14px;line-height:1.4;color:rgba(255,255,255,.85);padding-top:5px"><b style="font-weight:700;color:#fff">Cada marca personal vende una sola oferta.</b> El nivel de abajo genera el deseo del de arriba.</p></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#fff">2</span><p style="margin:0;font-weight:300;font-size:14px;line-height:1.4;color:rgba(255,255,255,.85);padding-top:5px"><b style="font-weight:700;color:#fff">Un solo B2C, una sola aceleradora, una sola marca.</b> La energía no se divide más.</p></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#fff">3</span><p style="margin:0;font-weight:300;font-size:14px;line-height:1.4;color:rgba(255,255,255,.85);padding-top:5px"><b style="font-weight:700;color:#fff">El equity dice de quién es la empresa; las tablas dicen cuánto cobra cada uno.</b> No se mezclan.</p></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#fff">4</span><p style="margin:0;font-weight:300;font-size:14px;line-height:1.4;color:rgba(255,255,255,.85);padding-top:5px"><b style="font-weight:700;color:#fff">Cada uno cobra donde trabaja.</b> Quien no participa de una unidad no participa de su resultado.</p></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#fff">5</span><p style="margin:0;font-weight:300;font-size:14px;line-height:1.4;color:rgba(255,255,255,.85);padding-top:5px"><b style="font-weight:700;color:#fff">La tasa de caja refleja el consumo</b>, no la importancia de la división.</p></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#fff">6</span><p style="margin:0;font-weight:300;font-size:14px;line-height:1.4;color:rgba(255,255,255,.85);padding-top:5px"><b style="font-weight:700;color:#fff">Los acuerdos cerrados no se reabren.</b> Los nuevos se ordenan bajo el esquema unificado.</p></div>
+      <div style="display:flex;gap:14px;align-items:flex-start"><span style="flex:0 0 auto;width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Redaction',Georgia,serif;font-style:italic;font-size:16px;color:#fff">7</span><p style="margin:0;font-weight:300;font-size:14px;line-height:1.4;color:rgba(255,255,255,.85);padding-top:5px"><b style="font-weight:700;color:#fff">Primero el uno más uno.</b> El portfolio y el capital vienen después, sobre resultados.</p></div>
+    </div>
+  </div>
+
+  <div style="position:absolute;right:80px;bottom:36px;z-index:1;font-weight:500;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:#8C8C90">cáscara collective · documento maestro V4 · agosto 2026</div>
+</div>
+<script>
+(function () {
+  const embedded = window.top !== window.self;
+  const board = document.querySelector('[data-board="mapa"]');
+  if (!board || board.dataset.panReady) return;
+  board.dataset.panReady = '1';
+
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+  board.style.transformOrigin = '0 0';
+  board.style.willChange = 'transform';
+
+  const W = 6400, H = 5500;
+  const MIN = 0.06, MAX = 2.4;
+  let s = 1, x = 0, y = 0;
+  const apply = () => { board.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + s + ')'; };
+  const fit = () => {
+    s = Math.min(window.innerWidth / W, window.innerHeight / H) * 0.96;
+    x = (window.innerWidth - W * s) / 2;
+    y = (window.innerHeight - H * s) / 2;
+    apply();
+  };
+  fit();
+  window.addEventListener('resize', fit);
+
+  const zoomAt = (cx, cy, f) => {
+    const ns = Math.min(MAX, Math.max(MIN, s * f));
+    x = cx - (cx - x) * (ns / s);
+    y = cy - (cy - y) * (ns / s);
+    s = ns;
+  };
+
+  window.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    if (e.ctrlKey || e.metaKey) {
+      zoomAt(e.clientX, e.clientY, Math.exp(-e.deltaY * 0.01));
+    } else {
+      x -= e.deltaX;
+      y -= e.deltaY;
+    }
+    apply();
+  }, { passive: false });
+
+  let drag = null;
+  if (!embedded) document.body.style.cursor = 'grab';
+  window.addEventListener('mousedown', (e) => {
+    if (embedded || e.button !== 0 || window.getSelection().toString()) return;
+    drag = { px: e.clientX, py: e.clientY };
+    document.body.style.cursor = 'grabbing';
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (!drag) return;
+    x += e.clientX - drag.px; y += e.clientY - drag.py;
+    drag.px = e.clientX; drag.py = e.clientY;
+    apply();
+  });
+  window.addEventListener('mouseup', () => { drag = null; if (!embedded) document.body.style.cursor = 'grab'; });
+
+  // touch: one finger pans, two fingers pinch-zoom
+  let tPrev = null;
+  window.addEventListener('touchstart', (e) => {
+    if (e.target.closest('a')) return;
+    tPrev = [...e.touches].map(t => ({ x: t.clientX, y: t.clientY }));
+  }, { passive: true });
+  window.addEventListener('touchmove', (e) => {
+    if (!tPrev) return;
+    e.preventDefault();
+    const now = [...e.touches].map(t => ({ x: t.clientX, y: t.clientY }));
+    if (now.length === 1 && tPrev.length >= 1) {
+      x += now[0].x - tPrev[0].x;
+      y += now[0].y - tPrev[0].y;
+    } else if (now.length >= 2 && tPrev.length >= 2) {
+      const midN = { x: (now[0].x + now[1].x) / 2, y: (now[0].y + now[1].y) / 2 };
+      const midP = { x: (tPrev[0].x + tPrev[1].x) / 2, y: (tPrev[0].y + tPrev[1].y) / 2 };
+      const dN = Math.hypot(now[0].x - now[1].x, now[0].y - now[1].y);
+      const dP = Math.hypot(tPrev[0].x - tPrev[1].x, tPrev[0].y - tPrev[1].y);
+      x += midN.x - midP.x; y += midN.y - midP.y;
+      if (dP > 0) zoomAt(midN.x, midN.y, dN / dP);
+    }
+    tPrev = now;
+    apply();
+  }, { passive: false });
+  window.addEventListener('touchend', (e) => {
+    tPrev = e.touches.length ? [...e.touches].map(t => ({ x: t.clientX, y: t.clientY })) : null;
+  }, { passive: true });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === '0') { fit(); }
+    else if (e.key === '+' || e.key === '=') { s = Math.min(MAX, s * 1.2); apply(); }
+    else if (e.key === '-') { s = Math.max(MIN, s / 1.2); apply(); }
+  });
+
+  if (embedded) return;
+  const hint = document.createElement('div');
+  const touchDevice = matchMedia('(pointer:coarse)').matches;
+  hint.textContent = touchDevice
+    ? 'un dedo para mover · pellizcar para zoom'
+    : 'dos dedos para mover · ⌘ + scroll para zoom · 0 para encuadrar';
+  hint.setAttribute('style', "position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:99;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid rgba(10,10,12,.12);border-radius:999px;padding:9px 20px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#10069F;pointer-events:none;transition:opacity .5s;white-space:nowrap");
+  document.body.appendChild(hint);
+  setTimeout(() => { hint.style.opacity = '0'; }, 3200);
+})();
+</script>
+</body>
+</html>
