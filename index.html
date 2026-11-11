@@ -3,86 +3,152 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Acuerdos principales — Cáscara V4</title>
+<title>Acuerdos Cáscara</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310069F'/%3E%3Ccircle cx='32' cy='44' r='9' fill='%23F4F2EE'/%3E%3C/svg%3E">
 <style>
 @font-face{font-family:'Redaction';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/redaction-italic.otf) format('opentype')}
+
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:#F4F2EE}
-a{color:#10069F;text-decoration:none}
-a:hover{opacity:.75}
-::selection{background:#10069F;color:#fff}
-@keyframes om-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-.card{transition:transform .18s ease}
-.card:hover{transform:translateY(-4px)}
-.card-doc:hover{box-shadow:0 0 0 1.5px #10069F}
-.h1{margin:26px 0 0;font-weight:700;font-size:78px;line-height:.98;letter-spacing:-.03em;text-transform:uppercase}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}
-.page{min-height:100vh;background:#F4F2EE;background-image:radial-gradient(rgba(10,10,12,.055) 1.4px,transparent 1.4px);background-size:26px 26px;font-family:'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;color:#0A0A0C;-webkit-font-smoothing:antialiased;padding:56px 48px 64px;box-sizing:border-box}
-@media (max-width:900px){
-  .cards{grid-template-columns:1fr}
-  .h1{font-size:clamp(44px,9vw,78px)}
-  .page{padding:36px 24px 48px}
+:root{
+  --tinta:#0A0A0C;
+  --papel:#F4F2EE;
+  --azul:#10069F;
+  --gris:#3A3A40;
+  --gris-claro:#8C8C90;
+  --linea:rgba(10,10,12,.14);
 }
+html,body{margin:0}
+body{background:var(--papel)}
+::selection{background:var(--azul);color:#fff}
+
+.page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  padding:72px 24px;
+  background:var(--papel);
+  background-image:radial-gradient(rgba(10,10,12,.055) 1.4px,transparent 1.4px);
+  background-size:26px 26px;
+  font-family:'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;
+  color:var(--tinta);
+  -webkit-font-smoothing:antialiased;
+}
+
+.shell{width:100%;max-width:620px;text-align:center}
+
+.eyebrow{
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  font-weight:500;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--azul);
+}
+.eyebrow .rule{width:28px;height:2px;background:var(--azul);flex:0 0 auto}
+.fecha{
+  margin:10px 0 0;font-weight:500;font-size:11.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gris-claro);
+}
+
+.h1{
+  margin:26px 0 0;font-weight:700;font-size:clamp(46px,8.5vw,78px);
+  line-height:.96;letter-spacing:-.035em;text-transform:uppercase;text-wrap:balance;
+}
+.h1 .punto{
+  font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;
+  text-transform:none;letter-spacing:0;color:var(--azul);
+}
+
+.lead{
+  margin:20px auto 0;max-width:46ch;
+  font-weight:300;font-size:17px;line-height:1.55;color:var(--gris);text-wrap:pretty;
+}
+.lead b{font-weight:700;color:var(--tinta)}
+
+.card{
+  margin-top:40px;padding:34px 34px 30px;
+  background:#fff;border:1px solid var(--linea);border-radius:20px;
+  cursor:pointer;transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover,.card:focus-visible{transform:translateY(-4px);box-shadow:0 0 0 1.5px var(--azul);outline:none}
+
+.kicker{
+  display:block;font-weight:500;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--azul);
+}
+.card-title{
+  margin:14px 0 0;font-weight:700;font-size:clamp(28px,5.2vw,38px);
+  line-height:1.04;letter-spacing:-.025em;text-transform:uppercase;
+}
+.card-text{
+  margin:14px auto 0;max-width:44ch;
+  font-weight:300;font-size:15px;line-height:1.55;color:var(--gris);text-wrap:pretty;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;margin-top:26px;
+  background:var(--azul);color:#fff;border-radius:999px;padding:12px 24px;
+  font-weight:500;font-size:13.5px;letter-spacing:.04em;
+}
+.btn .flecha{font-family:'Redaction',Georgia,serif;font-style:italic;font-size:17px;line-height:1}
+
+.foot{
+  margin:44px auto 0;padding-top:24px;max-width:420px;
+  border-top:1px solid var(--linea);
+  font-weight:500;font-size:11.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gris-claro);
+}
+
+@media (max-width:600px){
+  .page{padding:48px 20px}
+  .card{padding:28px 22px 26px}
+  .eyebrow{gap:10px;font-size:10.5px;letter-spacing:.16em}
+  .eyebrow .rule{width:18px}
+}
+
+@keyframes om-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 .modal-wrap[hidden]{display:none}
-.modal-wrap{position:fixed;inset:0;z-index:50;background:rgba(10,10,12,.55);display:flex;align-items:center;justify-content:center;padding:32px;box-sizing:border-box}
+.modal-wrap{position:fixed;inset:0;z-index:50;background:rgba(10,10,12,.55);display:flex;align-items:center;justify-content:center;padding:32px}
 @media (max-width:700px){.modal-wrap{padding:12px}}
 </style>
 </head>
 <body>
 <div class="page">
 
-  <div style="max-width:1180px;margin:0 auto">
+  <main class="shell">
 
-    <div style="display:flex;align-items:center;justify-content:flex-end;gap:24px;flex-wrap:wrap">
-      <div style="display:flex;align-items:center;gap:16px"><span style="width:30px;height:3px;background:#10069F;display:block"></span><span style="font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#10069F">Cáscara Collective · interno de socios</span></div>
-      <span style="font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#8C8C90">Noviembre 2026</span>
+    <div class="eyebrow">
+      <span class="rule"></span>
+      <span>Cáscara Collective</span>
+      <span class="rule"></span>
+    </div>
+    <p class="fecha">Interno de socios · Noviembre 2026</p>
+
+    <h1 class="h1">Acuerdos<br>Cáscara<span class="punto">.</span></h1>
+
+    <p class="lead">La fusión de Cáscara y F3 en una pieza: el <b>documento maestro</b>, con la letra completa de cada acuerdo y los números con los que se cerraron septiembre y octubre.</p>
+
+    <div class="card" id="abrir-doc" role="button" tabindex="0" aria-label="Abrir el documento maestro">
+      <span class="kicker">Acuerdo vigente</span>
+      <h2 class="card-title">El documento maestro</h2>
+      <p class="card-text">Las cinco partes completas — escalera, estructura, propiedad, economía y levantar capital — con tablas, criterios y simulaciones.</p>
+      <span class="btn">Abrir el documento <span class="flecha">↗</span></span>
     </div>
 
-    <h1 class="h1">Acuerdos<br>principales<span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;color:#10069F">.</span></h1>
-    <p style="margin:22px 0 0;font-weight:300;font-size:18px;line-height:1.5;color:#3A3A40;max-width:60ch;text-wrap:pretty">La fusión de Cáscara y F3 en dos piezas: el <b style="font-weight:700">mapa</b> para recorrer la estructura entera de un vistazo, y el <b style="font-weight:700">documento maestro</b> con la letra completa de cada acuerdo.</p>
+    <p class="foot">Confidencial</p>
 
-    <div class="cards">
-
-      <a class="card" href="mapa.html" style="display:block;background:#10069F;color:#fff;border-radius:20px;padding:38px 40px;text-decoration:none">
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <span style="font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#AEB6FF">Pieza 01</span>
-          <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:26px;color:#AEB6FF">→</span>
-        </div>
-        <div style="font-weight:700;font-size:40px;line-height:1.02;letter-spacing:-.02em;text-transform:uppercase;margin-top:20px">El mapa de la fusión</div>
-        <p style="margin:16px 0 0;font-weight:300;font-size:15.5px;line-height:1.5;color:rgba(255,255,255,.82)">Tablero navegable: la escalera de tres niveles, la marca madre y sus divisiones, la propiedad, la economía de cada unidad y los principios. Se recorre con scroll y arrastre.</p>
-      </a>
-
-      <div class="card card-doc" id="abrir-doc" style="background:#FFFFFF;border:1px solid rgba(10,10,12,.14);border-radius:20px;padding:38px 40px;cursor:pointer">
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <span style="font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#10069F">Pieza 02</span>
-          <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:26px;color:#10069F">↗</span>
-        </div>
-        <div style="font-weight:700;font-size:40px;line-height:1.02;letter-spacing:-.02em;text-transform:uppercase;margin-top:20px">El documento maestro</div>
-        <p style="margin:16px 0 0;font-weight:300;font-size:15.5px;line-height:1.5;color:#3A3A40">Las cinco partes completas — escalera, estructura, propiedad, economía y levantar capital — con tablas, criterios y simulaciones. Se abre acá mismo y se puede imprimir.</p>
-      </div>
-
-    </div>
-
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:56px;padding-top:28px;border-top:1px solid rgba(10,10,12,.14)">
-      <span></span>
-      <span style="font-weight:500;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:#8C8C90">Confidencial · documento interno de socios</span>
-    </div>
-
-  </div>
+  </main>
 
   <div class="modal-wrap" id="modal" hidden>
     <div id="backdrop" style="position:absolute;inset:0"></div>
     <div style="position:relative;width:100%;max-width:1080px;height:100%;background:#F4F2EE;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(10,10,12,.35);animation:om-in .22s ease both">
       <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 24px;background:#10069F;color:#fff;flex:0 0 auto">
         <div style="display:flex;align-items:baseline;gap:14px;min-width:0">
-          <span style="font-weight:700;font-size:17px;letter-spacing:.02em;text-transform:uppercase">Cáscara V4</span>
+          <span style="font-weight:700;font-size:17px;letter-spacing:.02em;text-transform:uppercase">Acuerdos Cáscara</span>
           <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:17px;color:#AEB6FF;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Documento maestro</span>
         </div>
         <div style="display:flex;align-items:center;gap:10px">
-          <a href="documento.html" target="_blank" style="border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 16px;font-weight:500;font-size:12.5px;letter-spacing:.04em;color:#fff;white-space:nowrap">Abrir en pestaña</a>
-          <div id="cerrar" style="width:34px;height:34px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;font-size:17px;line-height:1;cursor:pointer;color:#fff;flex:0 0 auto">✕</div>
+          <a href="documento.html" target="_blank" style="border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 16px;font-weight:500;font-size:12.5px;letter-spacing:.04em;color:#fff;text-decoration:none;white-space:nowrap">Abrir en pestaña</a>
+          <div id="cerrar" role="button" tabindex="0" aria-label="Cerrar" style="width:34px;height:34px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;font-size:17px;line-height:1;cursor:pointer;color:#fff;flex:0 0 auto">✕</div>
         </div>
       </div>
       <iframe id="doc-frame" title="Documento maestro" style="flex:1;width:100%;border:0;background:#F4F2EE"></iframe>
@@ -94,6 +160,7 @@ a:hover{opacity:.75}
 (function () {
   const modal = document.getElementById('modal');
   const frame = document.getElementById('doc-frame');
+  const tarjeta = document.getElementById('abrir-doc');
   const abrir = () => {
     if (!frame.src) frame.src = 'documento.html';
     modal.hidden = false;
@@ -103,7 +170,10 @@ a:hover{opacity:.75}
     modal.hidden = true;
     document.body.style.overflow = '';
   };
-  document.getElementById('abrir-doc').addEventListener('click', abrir);
+  tarjeta.addEventListener('click', abrir);
+  tarjeta.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrir(); }
+  });
   document.getElementById('cerrar').addEventListener('click', cerrar);
   document.getElementById('backdrop').addEventListener('click', cerrar);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') cerrar(); });
