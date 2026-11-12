@@ -65,8 +65,9 @@ body{background:var(--papel)}
 }
 .lead b{font-weight:700;color:var(--tinta)}
 
+.cards{margin-top:40px;display:flex;flex-direction:column;gap:14px}
 .card{
-  margin-top:40px;padding:34px 34px 30px;
+  padding:34px 34px 30px;
   background:#fff;border:1px solid var(--linea);border-radius:20px;
   cursor:pointer;transition:transform .18s ease,box-shadow .18s ease;
 }
@@ -90,6 +91,13 @@ body{background:var(--papel)}
   font-weight:500;font-size:13.5px;letter-spacing:.04em;
 }
 .btn .flecha{font-family:'Redaction',Georgia,serif;font-style:italic;font-size:17px;line-height:1}
+
+.card--sec{background:transparent;border-style:dashed;padding:26px 30px 24px}
+.card--sec:hover,.card--sec:focus-visible{background:#fff;border-style:solid}
+.card--sec .kicker{color:var(--gris-claro)}
+.card--sec .card-title{font-size:clamp(20px,3.6vw,26px);color:var(--gris)}
+.card--sec .card-text{font-size:14px}
+.btn--sec{background:transparent;color:var(--azul);border:1.5px solid var(--azul);padding:10px 22px;margin-top:22px}
 
 .foot{
   margin:44px auto 0;padding-top:24px;max-width:420px;
@@ -125,13 +133,24 @@ body{background:var(--papel)}
 
     <h1 class="h1">Acuerdos<br>Cáscara<span class="punto">.</span></h1>
 
-    <p class="lead">La fusión de Cáscara y F3 en una pieza: el <b>documento maestro</b>, con la letra completa de cada acuerdo y los números con los que se cerraron septiembre y octubre.</p>
+    <p class="lead">La fusión de Cáscara y F3 en una pieza: el <b>documento maestro</b>, con la letra completa de cada acuerdo y los números con los que se cerraron septiembre y octubre. Abajo queda la versión de agosto, para ver qué cambió.</p>
 
-    <div class="card" id="abrir-doc" role="button" tabindex="0" aria-label="Abrir el documento maestro">
-      <span class="kicker">Acuerdo vigente</span>
-      <h2 class="card-title">El documento maestro</h2>
-      <p class="card-text">Las cinco partes completas — escalera, estructura, propiedad, economía y levantar capital — con tablas, criterios y simulaciones.</p>
-      <span class="btn">Abrir el documento <span class="flecha">↗</span></span>
+    <div class="cards">
+
+      <div class="card" data-doc="documento.html" data-titulo="Documento maestro · noviembre" role="button" tabindex="0" aria-label="Abrir el documento maestro vigente">
+        <span class="kicker">Acuerdo vigente · noviembre 2026</span>
+        <h2 class="card-title">El documento maestro</h2>
+        <p class="card-text">Las cinco partes completas — escalera, estructura, propiedad, economía y levantar capital — con tablas, criterios y simulaciones.</p>
+        <span class="btn">Abrir el documento <span class="flecha">↗</span></span>
+      </div>
+
+      <div class="card card--sec" data-doc="documento-agosto.html" data-titulo="Documento maestro · agosto" role="button" tabindex="0" aria-label="Abrir la versión de agosto de 2026">
+        <span class="kicker">Versión anterior · agosto 2026</span>
+        <h2 class="card-title">Como se firmó la fusión</h2>
+        <p class="card-text">El acuerdo original, antes de los números de septiembre y octubre. Se conserva para comparar qué cambió.</p>
+        <span class="btn btn--sec">Abrir la de agosto <span class="flecha">↗</span></span>
+      </div>
+
     </div>
 
     <p class="foot">Confidencial</p>
@@ -144,10 +163,10 @@ body{background:var(--papel)}
       <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 24px;background:#10069F;color:#fff;flex:0 0 auto">
         <div style="display:flex;align-items:baseline;gap:14px;min-width:0">
           <span style="font-weight:700;font-size:17px;letter-spacing:.02em;text-transform:uppercase">Acuerdos Cáscara</span>
-          <span style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:17px;color:#AEB6FF;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Documento maestro</span>
+          <span id="modal-titulo" style="font-family:'Redaction',Georgia,serif;font-style:italic;font-size:17px;color:#AEB6FF;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Documento maestro</span>
         </div>
         <div style="display:flex;align-items:center;gap:10px">
-          <a href="documento.html" target="_blank" style="border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 16px;font-weight:500;font-size:12.5px;letter-spacing:.04em;color:#fff;text-decoration:none;white-space:nowrap">Abrir en pestaña</a>
+          <a id="modal-pestana" href="documento.html" target="_blank" style="border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 16px;font-weight:500;font-size:12.5px;letter-spacing:.04em;color:#fff;text-decoration:none;white-space:nowrap">Abrir en pestaña</a>
           <div id="cerrar" role="button" tabindex="0" aria-label="Cerrar" style="width:34px;height:34px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;font-size:17px;line-height:1;cursor:pointer;color:#fff;flex:0 0 auto">✕</div>
         </div>
       </div>
@@ -160,9 +179,12 @@ body{background:var(--papel)}
 (function () {
   const modal = document.getElementById('modal');
   const frame = document.getElementById('doc-frame');
-  const tarjeta = document.getElementById('abrir-doc');
-  const abrir = () => {
-    if (!frame.src) frame.src = 'documento.html';
+  const titulo = document.getElementById('modal-titulo');
+  const pestana = document.getElementById('modal-pestana');
+  const abrir = (doc, nombre) => {
+    if (frame.getAttribute('src') !== doc) frame.setAttribute('src', doc);
+    titulo.textContent = nombre;
+    pestana.setAttribute('href', doc);
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
   };
@@ -170,9 +192,13 @@ body{background:var(--papel)}
     modal.hidden = true;
     document.body.style.overflow = '';
   };
-  tarjeta.addEventListener('click', abrir);
-  tarjeta.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrir(); }
+  document.querySelectorAll('.card[data-doc]').forEach((tarjeta) => {
+    const doc = tarjeta.dataset.doc;
+    const nombre = tarjeta.dataset.titulo;
+    tarjeta.addEventListener('click', () => abrir(doc, nombre));
+    tarjeta.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrir(doc, nombre); }
+    });
   });
   document.getElementById('cerrar').addEventListener('click', cerrar);
   document.getElementById('backdrop').addEventListener('click', cerrar);
